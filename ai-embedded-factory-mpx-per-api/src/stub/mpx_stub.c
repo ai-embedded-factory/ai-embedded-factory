@@ -1,0 +1,1096 @@
+#include "mpx_stub.h"
+
+/* Auto-generated stubs: default to ENOSYS to keep test scaffolding buildable. */
+
+mqd_t mpx _mq_extend_open(const char * queue_name, int operation, mode_t mode, struct mq_attr * queue_attributes, mq_extendattr_t * extend_attributes) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_attr_getcontrolsize(pthread_attr_t * thread_attributes, size_t * thread_control_size) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_attr_getname(pthread_attr_t * thread_attributes, char ** name) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_attr_getpriority(pthread_attr_t * thread_attributes, int * priority) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_attr_gettimeslice(pthread_attr_t * thread_attributes, u_long * thread_time_slice) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_attr_setcontroladdr(pthread_attr_t * thread_attributes, void * thread_control_address, size_t thread_control_size) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_attr_setname(pthread_attr_t * thread_attributes, char * name) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_attr_setpriority(pthread_attr_t * thread_attributes, int priority) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_attr_settimeslice(pthread_attr_t * thread_attributes, u_long thread_time_slice) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_condattr_getcontroladdr(pthread_condattr_t * condition_var_attributes, void ** condition_var_control_address) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_condattr_getname(pthread_condattr_t * condition_var_attributes, char ** name) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_condattr_setcontroladdr(pthread_condattr_t * condition_var_attributes, void * condition_var_control_address, size_t condition_var_control_size) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_condattr_setname(pthread_condattr_t * condition_var_attributes, char * name) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_event_flags_create(pthread_event_flags_t * event_flags_handle, pthread_event_flagsattr_t * event_flags_attributes) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_event_flags_destroy(pthread_event_flags_t * event_flags_handle) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_event_flags_set(pthread_event_flags_t * event_flags_handle, u_long events_to_set) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_event_flags_timedwait(pthread_event_flags_t * event_flags_handle, u_long requested_events, int all_or_any, u_long * received_events, tick_t timeout_ticks) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_event_flags_trywait(pthread_event_flags_t * event_flags_handle, u_long requested_events, int all_or_any, u_long * received_events) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_event_flags_wait(pthread_event_flags_t * event_flags_handle, u_long requested_events, int all_or_any, u_long * received_events) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_event_flagsattr_destroy(pthread_event_flagsattr_t * event_flags_attributes) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_event_flagsattr_getcontrolsize(pthread_event_flagsattr_t * event_flags_attributes, size_t * event_flags_control_size) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_event_flagsattr_getname(pthread_event_flagsattr_t * event_flags_attributes, char ** name) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_event_flagsattr_init(pthread_event_flagsattr_t * event_flags_attributes) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_event_flagsattr_setcontroladdr(pthread_event_flagsattr_t * event_flags_attributes, void * event_flags_control_address, size_t event_flags_control_size) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_event_flagsattr_setname(pthread_event_flagsattr_t * event_flags_attributes, char * name) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_fastqueue_destroy(pthread_fastqueue_t * fastqueue_handle) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_fastqueue_receive(pthread_fastqueue_t * fastqueue_handle, u_long * message_destination, size_t message_size) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_fastqueue_send(pthread_fastqueue_t * fastqueue_handle, u_long * message_source, size_t message_size) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_fastqueue_timedsend(pthread_fastqueue_t * fastqueue_handle, u_long * message_source, size_t message_size, tick_t timeout_ticks) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_fastqueue_tryreceive(pthread_fastqueue_t * fastqueue_handle, u_long * message_destination, size_t message_size) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_fastqueue_trysend(pthread_fastqueue_t * fastqueue_handle, u_long * message_source, size_t message_size) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_fastqueueattr_destroy(pthread_fastqueueattr_t * fastqueue_attributes) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_fastqueueattr_getcontroladdr(pthread_fastqueueattr_t * fastqueue_attributes, void ** fastqueue_control_address) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_fastqueueattr_getcontrolsize(pthread_fastqueueattr_t * fastqueue_attributes, size_t * fastqueue_control_size) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_fastqueueattr_getqueueaddr(pthread_fastqueueattr_t* fastqueue_attributes, void ** fastqueue_memory_address) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_fastqueueattr_getqueuesize(pthread_fastqueueattr_t* fastqueue_attributes, size_t * fastqueue_memory_size) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_fastqueueattr_init(pthread_fastqueueattr_t * fastqueue_attributes) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_fastqueueattr_setcontroladdr(pthread_fastqueueattr_t * fastqueue_attributes, void * fastqueue_control_address, size_t fastqueue_control_size) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_fastqueueattr_setname(pthread_fastqueueattr_t * fastqueue_attributes, char * fastqueue_name) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_fastqueueattr_setqueueaddr(pthread_fastqueueattr_t* fastqueue_attributes, void * fastqueue_memory_address, size_t fastqueue_memory_size) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_information_get(pthread_t thread_handle, char ** name, int * state, int * priority, void ** stack_limit, void ** stack_pointer, u_long * minimum_stack, pthread_t * next_thread) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_memory_manager_get(void * (** memory_allocate_pointer)(u_int type, u_long size), void (** memory_release_pointer)(u_int type, void *memory_to_release)) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_memory_manager_set(void * (* memory_allocate_pointer)(u_int type, u_long size), void (* memory_release_pointer)(u_int type, void *memory_to_release)) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_memorypool_allocate(pthread_memorypool_t * memorypool_handle, void ** allocated_memory, size_t request_size) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_memorypool_create(pthread_memorypool_t * memorypool_handle, pthread_memorypoolattr_t * memorypool_attributes, void * pool_start, size_t pool_size) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_memorypool_destroy(pthread_memorypool_t * memorypool_handle) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_memorypool_timedallocate(pthread_memorypool_t * memorypool_handle, void ** allocated_memory, size_t request_size, tick_t timeout_ticks) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_memorypool_tryallocate(pthread_memorypool_t * memorypool_handle, void ** allocated_memory, size_t request_size) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_memorypoolattr_destroy(pthread_memorypoolattr_t * memorypool_attributes) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_memorypoolattr_getcontroladdr(pthread_memorypoolattr_t * memorypool_attributes, void ** memorypool_control_address) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_memorypoolattr_getname(pthread_memorypoolattr_t * memorypool_attributes, char ** name) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_memorypoolattr_init(pthread_memorypoolattr_t * memorypool_attributes) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_memorypoolattr_setcontroladdr(pthread_memorypoolattr_t * memorypool_attributes, void * memorypool_control_address, size_t memorypool_control_size) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_mutexattr_getcontroladdr(pthread_mutexattr_t * mutex_attributes, void ** mutex_control_address) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_mutexattr_getname(pthread_mutexattr_t * mutex_attributes, char ** name) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_mutexattr_setcontroladdr(pthread_mutexattr_t * mutex_attributes, void * mutex_control_address, size_t mutex_control_size) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_mutexattr_setname(pthread_mutexattr_t * mutex_attributes, char * name) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_partitionpool_create(pthread_partitionpool_t * partitionpool_handle, pthread_partitionpoolattr_t * partitionpool_attributes, void * pool_start, size_t pool_size, size_t partition_size) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_partitionpool_destroy(pthread_partitionpool_t * partitionpool_handle) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_partitionpool_timedallocate(pthread_partitionpool_t * partitionpool_handle, void ** allocated_memory, size_t request_size, tick_t timeout_ticks) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_partitionpool_tryallocate(pthread_partitionpool_t * partitionpool_handle, void ** allocated_memory, size_t request_size) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_partitionpoolattr_destroy(pthread_partitionpoolattr_t * partitionpool_attributes) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_partitionpoolattr_getcontroladdr(pthread_partitionpoolattr_t * partitionpool_attributes, void ** partitionpool_control_address) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_partitionpoolattr_getcontrolsize(pthread_partitionpoolattr_t * partitionpool_attributes, size_t * partitionpool_control_size) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_partitionpoolattr_getname(pthread_partitionpoolattr_t * partitionpool_attributes, char ** name) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_partitionpoolattr_init(pthread_partitionpoolattr_t * partitionpool_attributes) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_partitionpoolattr_setcontroladdr(pthread_partitionpoolattr_t * partitionpool_attributes, void * partitionpool_control_address, size_t partitionpool_control_size) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_partitionpoolattr_setname(pthread_partitionpoolattr_t * partitionpool_attributes, char * name) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_priority_change(pthread_t thread_handle, int new_priority, int * old_priority) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_stack_check(pthread_t thread_handle, u_long * minimum_available_stack) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_start(u_long run_time_id, void * memory_start, u_long memory_size) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_ticktimer_create(pthread_ticktimer_t *ticktimer_handle, pthread_ticktimerattr_t * attributes, void (*expiration_routine)(pthread_ticktimer_t *, void *), void *argument, tick_t initial_ticks, tick_t reload_ticks) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_ticktimerattr_destroy(pthread_ticktimerattr_t *ticktimer_attributes) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_ticktimerattr_getcontroladdr(pthread_ticktimerattr_t * ticktimer_attributes, void ** ticktimer_control_address) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_ticktimerattr_getcontrolsize(pthread_ticktimerattr_t * ticktimer_attributes, size_t * ticktimer_control_size) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_ticktimerattr_getname(pthread_ticktimerattr_t * ticktimer_attributes, char ** name) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_ticktimerattr_setcontroladdr(pthread_ticktimerattr_t * ticktimer_attributes, void * ticktimer_control_address, size_t ticktimer_control_size) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _pthread_ticktimerattr_setname(pthread_ticktimerattr_t * ticktimer_attributes, char * name) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _sem_extend_init(sem_t * semaphore_handle, int pshared, unsigned int value, semattr_t * semaphore_attributes) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _semattr_getcontrolsize(semattr_t *semaphore_attributes, size_t * semaphore_control_size) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _semattr_getname(semattr_t *semaphore_attributes, char ** semaphore_name) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _semattr_init(semattr_t *semaphore_attributes) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx _semattr_setcontroladdr(semattr_t *semaphore_attributes, void * semaphore_control_address, size_t semaphore_control_size) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx_pthread_f astqueue_timedreceive(pthread_fastqueue_t * fastqueue_handle, u_long * message_destination, size_t message_size, tick_t timeout_ticks) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int clock_getres(clockid_t clock_id, struct mpx_timespec *resolution) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int clock_gettime(clockid_t clock_id, struct mpx_timespec *current_time) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int clock_settime(clockid_t clock_id, struct mpx_timespec *new_time) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx_pthrea d_memorypoolattr_getcontrolsize(pthread_memorypoolattr_t * memorypool_attributes, size_t * memorypool_control_size) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx_pthread_ticktim erattr_init(pthread_ticktimerattr_t *ticktimer_attributes) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx_semattr_getcontro laddr(semattr_t *semaphore_attributes, void ** semaphore_control_address) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+mqd_t mpx_mq_extend_open_check_params(const char * queue_name, int operation, mode_t mode, struct mq_attr * queue_attributes, mq_extendattr_t * extend_attributes) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx_mq_extendattr_destroy(mq_extendattr_t * queue_attributes) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx_mq_extendattr_getcontroladdr(mq_extendattr_t * queue_attributes, void ** queue_control_address) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx_mq_extendattr_getcontrolsize(mq_extendattr_t * queue_attributes, size_t * queue_control_size) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx_mq_extendattr_getqueueaddr(mq_extendattr_t * queue_attributes, void ** queue_memory_address) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx_mq_extendattr_getqueuesize(mq_extendattr_t * queue_attributes, size_t * queue_memory_size) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx_mq_extendattr_init(mq_extendattr_t * queue_attributes) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx_mq_extendattr_setcontroladdr(mq_extendattr_t * queue_attributes, void * queue_control_address, size_t queue_control_size) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx_mq_extendattr_setqueueaddr(mq_extendattr_t * queue_attributes, void * queue_memory_address, size_t queue_memory_size) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx_pthread_attr_getcontroladdr(pthread_a ttr_t * thread_attributes, void ** thread_control_address) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx_pthread_condattr_getcontrolsize(pthre ad_condattr_t * condition_var_attributes, size_t * condition_var_control_size) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx_pthread_event_flags_clear(pthread_event_flags_t * event_flags_handle) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx_pthread_fastqueue_create(pthread_fastqueue_t *fastqueue_handle, pthread_fastqueueattr_t * fastqueue_attributes, size_t message_size, int max_messages) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx_pthread_fastqueueattr_getname(pthread_fastqueue attr_t * fastqueue_attributes, char ** fastqueue_name) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx_pthread_memory_manager_enable(void) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx_pthread_memorypool_free(void * allocated_memory) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx_pthread_memorypoolattr_setname(p thread_memorypoolattr_t * memorypool_attributes, char * name) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx_pthread_mutexattr_getcontrolsize(pthread_mutex attr_t * mutex_attributes, size_t * mutex_control_size) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx_pthread_partitionpool_allocate(pthread_partitionpool_t * partitionpool_handle, void ** allocated_memory, size_t request_size) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx_pthread_partitionpool_free(void * allocated_memory) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx_pthread_resume(pthread_t thread_handle) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx_pthread_suspend(pthread_t thread_handle) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx_pthread_tick_sleep(tick_t ticks_to_sleep) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+tick_t mpx_pthread_ticks_get(void) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx_pthread_ticktimer_destroy(pthread_ticktimer_t *ticktimer_handle) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx_pthread_ticktimer_start(pthread_ticktimer_t *ticktimer_handle) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx_pthread_ticktimer_stop(pthread_ticktimer_t *ticktimer_handle) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx_pthread_ticktimer_update(pthread_ticktimer_t *ticktimer_handle , tick_t initial_ticks, tick_t reload_ticks) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx_sem_timedwait(sem_t * semaphore_handle, tick_t timeout_ticks) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx_semattr_destroy(semattr_t *semaphore_attributes) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx_semattr_setname(semattr_t *semaphore_attributes, char * semaphor e_name) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mq_close(mqd_t message_queue) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mq_getattr(mqd_t message_queue, struct mq_attr * queue_attributes) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+mqd_t mq_open(const char * queue_name, int operation, mode_t mode, struct mq_attr * queue_attributes) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+ssize_t mq_receive(mqd_t message_queue, char * message, size_t message_size, unsigned int *message_priority) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mq_send(mqd_t message_queue, const char * message, size_t message_size, unsigned int message_priority) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mq_setattr(mqd_t message_queue, const struct mq_attr * queue_attributes, struct mq_attr * previous_attributes) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+ssize_t mq_timedreceive(mqd_t message_queue, char * message, size_t message_size, unsigned int * message_priority, const struct mpx _timespec *absolute_timeout) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mq_timedsend(mqd_t message_queue, const char * message, size_t message_size, unsigned int message_priority, const struct mpx _timespec *absolute_timeout) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int nanosleep(const struct mpx_timespec *request_time, struct mpx_timespec *remaining_time) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int mpx_pthread_event_flagsattr_getc ontroladdr(pthread_event_flagsattr_t * event_flags_attributes, void ** event_flags_control_address) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int pthread_attr_getdetachstate(pthread_attr_t * thread_attributes, int * detach_state) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int pthread_attr_getstackaddr(pthread_attr_t * thread_attributes, void ** stack_address) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int pthread_attr_getstacksize(pthread_attr_t * thread_attributes, size_t * stack_size) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int pthread_attr_init(pthread_attr_t * thread_attributes) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int pthread_attr_setdetachstate(pthread_attr_t * thread_attributes, int detach_state) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int pthread_attr_setstackaddr(pthread_attr_t * thread_attributes, void * stack_address) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int pthread_attr_setstacksize(pthread_attr_t * thread_attributes, size_t stack_size) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int pthread_cancel(pthread_t thread_handle) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+void pthread_cleanup_pop(int execute) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return;
+}
+
+void pthread_cleanup_push(void (*cleanup_handler)(void *), void * argument) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return;
+}
+
+int pthread_cond_broadcast(pthread_cond_t * condition_var_handle) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int pthread_cond_destroy(pthread_cond_t * condition_var_handle) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int pthread_cond_init(pthread_cond_t * condition_var_handle, pthread_condattr_t * condition_var_attributes) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int pthread_cond_signal(pthread_cond_t * condition_var_handle) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int pthread_cond_timedwait(pthread_cond_t * condition_var_handle, pthread_mutex_t * mutex_handle, const struct mpx_timespec *absolute_time) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int pthread_cond_wait(pthread_cond_t * condition_var_handle, pthread_mutex_t * mutex_handle) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int pthread_condattr_destroy(pthread_condattr_t * condition_var_attributes) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int pthread_condattr_getpshared(pthread_condattr_t * condition_var_attributes, int * process_sharing_designation) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int pthread_condattr_init(pthread_condattr_t * condition_var_attributes) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int pthread_condattr_setpshared(pthread_condattr_t * condition_var_attributes, int process_sharing_designation) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int pthread_create(pthread_t * thread_handle, pthread_attr_t * attr, void *(*start_routine)(void *), void *arg) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int pthread_detach(pthread_t thread_handle) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int pthread_equal(pthread_t first_thread, pthread_t second_thread) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+void pthread_exit(void * exit_value) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return;
+}
+
+int pthread_join(pthread_t thread_handle, void ** value_destination) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int pthread_mutex_destroy(pthread_mutex_t * mutex_handle) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int pthread_mutex_init(pthread_mutex_t * mutex_handle, pthread_mutexattr_t * mutex_attributes) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int pthread_mutex_lock(pthread_mutex_t * mutex_handle) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int pthread_mutex_trylock(pthread_mutex_t * mutex_handle) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int pthread_mutex_unlock(pthread_mutex_t * mutex_handle) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int pthread_mutexattr_destroy(pthread_mutexattr_t * mutex_attributes) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int pthread_mutexattr_getprotocol(pthread_mutexattr_t * mutex_attributes, int * protocol) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int pthread_mutexattr_getpshared(pthread_mutexattr_t * mutex_attributes, int * process_sharing_designation) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int pthread_mutexattr_gettype(pthread_mutexattr_t * mutex_attributes, int * type) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int pthread_mutexattr_init(pthread_mutexattr_t * mutex_attributes) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int pthread_mutexattr_setprotocol(pthread_mutexattr_t * mutex_attributes, int protocol) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int pthread_mutexattr_setpshared(pthread_mutexattr_t * mutex_attributes, int process_sharing_designation) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int pthread_mutexattr_settype(pthread_mutexattr_t * mutex_attributes, int type) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+pthread_t pthread_self(void) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int pthread_setcancelstate(int new_state, int * old_state) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int pthread_setcanceltype(int new_type, int * old_type) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+void pthread_testcancel(void) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return;
+}
+
+int sched_yield(void) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int sem_destroy(sem_t * semaphore_handle) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int sem_init(sem_t * semaphore_handle, int pshared, unsigned int value) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int sem_post(sem_t * semaphore_handle) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int sem_trywait(sem_t * semaphore_handle) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int sem_wait(sem_t * semaphore_handle) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+u_int sleep(unsigned int seconds) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+time_t time(mpx_time_t *return_seconds) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+
+int usleep(useconds_t microseconds) {
+  (void)0; /* parameters intentionally unused in stub */
+  errno = ENOSYS;
+  return -1;
+}
+

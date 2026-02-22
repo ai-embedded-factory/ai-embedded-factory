@@ -1,0 +1,275 @@
+test_id;req_id;api_name;test_level;test_type;description;status;owner
+TST-API-0001;REQ-API-0001;_mq_extend_open;UNIT;API_CONTRACT;Contract verification for _mq_extend_open (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0002;REQ-API-0002;_pthread_attr_getcontrolsize;UNIT;API_CONTRACT;Contract verification for _pthread_attr_getcontrolsize (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0003;REQ-API-0003;_pthread_attr_getname;UNIT;API_CONTRACT;Contract verification for _pthread_attr_getname (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0004;REQ-API-0004;_pthread_attr_getpriority;UNIT;API_CONTRACT;Contract verification for _pthread_attr_getpriority (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0005;REQ-API-0005;_pthread_attr_gettimeslice;UNIT;API_CONTRACT;Contract verification for _pthread_attr_gettimeslice (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0006;REQ-API-0006;_pthread_attr_setcontroladdr;UNIT;API_CONTRACT;Contract verification for _pthread_attr_setcontroladdr (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0007;REQ-API-0007;_pthread_attr_setname;UNIT;API_CONTRACT;Contract verification for _pthread_attr_setname (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0008;REQ-API-0008;_pthread_attr_setpriority;UNIT;API_CONTRACT;Contract verification for _pthread_attr_setpriority (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0009;REQ-API-0009;_pthread_attr_settimeslice;UNIT;API_CONTRACT;Contract verification for _pthread_attr_settimeslice (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0010;REQ-API-0010;_pthread_condattr_getcontroladdr;UNIT;API_CONTRACT;Contract verification for _pthread_condattr_getcontroladdr (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0011;REQ-API-0011;_pthread_condattr_getname;UNIT;API_CONTRACT;Contract verification for _pthread_condattr_getname (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0012;REQ-API-0012;_pthread_condattr_setcontroladdr;UNIT;API_CONTRACT;Contract verification for _pthread_condattr_setcontroladdr (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0013;REQ-API-0013;_pthread_condattr_setname;UNIT;API_CONTRACT;Contract verification for _pthread_condattr_setname (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0014;REQ-API-0014;_pthread_event_flags_create;UNIT;API_CONTRACT;Contract verification for _pthread_event_flags_create (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0015;REQ-API-0015;_pthread_event_flags_destroy;UNIT;API_CONTRACT;Contract verification for _pthread_event_flags_destroy (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0016;REQ-API-0016;_pthread_event_flags_set;UNIT;API_CONTRACT;Contract verification for _pthread_event_flags_set (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0017;REQ-API-0017;_pthread_event_flags_timedwait;UNIT;API_CONTRACT;Contract verification for _pthread_event_flags_timedwait (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0018;REQ-API-0018;_pthread_event_flags_trywait;UNIT;API_CONTRACT;Contract verification for _pthread_event_flags_trywait (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0019;REQ-API-0019;_pthread_event_flags_wait;UNIT;API_CONTRACT;Contract verification for _pthread_event_flags_wait (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0020;REQ-API-0020;_pthread_event_flagsattr_destroy;UNIT;API_CONTRACT;Contract verification for _pthread_event_flagsattr_destroy (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0021;REQ-API-0021;_pthread_event_flagsattr_getcontrolsize;UNIT;API_CONTRACT;Contract verification for _pthread_event_flagsattr_getcontrolsize (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0022;REQ-API-0022;_pthread_event_flagsattr_getname;UNIT;API_CONTRACT;Contract verification for _pthread_event_flagsattr_getname (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0023;REQ-API-0023;_pthread_event_flagsattr_init;UNIT;API_CONTRACT;Contract verification for _pthread_event_flagsattr_init (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0024;REQ-API-0024;_pthread_event_flagsattr_setcontroladdr;UNIT;API_CONTRACT;Contract verification for _pthread_event_flagsattr_setcontroladdr (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0025;REQ-API-0025;_pthread_event_flagsattr_setname;UNIT;API_CONTRACT;Contract verification for _pthread_event_flagsattr_setname (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0026;REQ-API-0026;_pthread_fastqueue_destroy;UNIT;API_CONTRACT;Contract verification for _pthread_fastqueue_destroy (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0027;REQ-API-0027;_pthread_fastqueue_receive;UNIT;API_CONTRACT;Contract verification for _pthread_fastqueue_receive (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0028;REQ-API-0028;_pthread_fastqueue_send;UNIT;API_CONTRACT;Contract verification for _pthread_fastqueue_send (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0029;REQ-API-0029;_pthread_fastqueue_timedsend;UNIT;API_CONTRACT;Contract verification for _pthread_fastqueue_timedsend (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0030;REQ-API-0030;_pthread_fastqueue_tryreceive;UNIT;API_CONTRACT;Contract verification for _pthread_fastqueue_tryreceive (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0031;REQ-API-0031;_pthread_fastqueue_trysend;UNIT;API_CONTRACT;Contract verification for _pthread_fastqueue_trysend (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0032;REQ-API-0032;_pthread_fastqueueattr_destroy;UNIT;API_CONTRACT;Contract verification for _pthread_fastqueueattr_destroy (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0033;REQ-API-0033;_pthread_fastqueueattr_getcontroladdr;UNIT;API_CONTRACT;Contract verification for _pthread_fastqueueattr_getcontroladdr (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0034;REQ-API-0034;_pthread_fastqueueattr_getcontrolsize;UNIT;API_CONTRACT;Contract verification for _pthread_fastqueueattr_getcontrolsize (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0035;REQ-API-0035;_pthread_fastqueueattr_getqueueaddr;UNIT;API_CONTRACT;Contract verification for _pthread_fastqueueattr_getqueueaddr (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0036;REQ-API-0036;_pthread_fastqueueattr_getqueuesize;UNIT;API_CONTRACT;Contract verification for _pthread_fastqueueattr_getqueuesize (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0037;REQ-API-0037;_pthread_fastqueueattr_init;UNIT;API_CONTRACT;Contract verification for _pthread_fastqueueattr_init (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0038;REQ-API-0038;_pthread_fastqueueattr_setcontroladdr;UNIT;API_CONTRACT;Contract verification for _pthread_fastqueueattr_setcontroladdr (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0039;REQ-API-0039;_pthread_fastqueueattr_setname;UNIT;API_CONTRACT;Contract verification for _pthread_fastqueueattr_setname (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0040;REQ-API-0040;_pthread_fastqueueattr_setqueueaddr;UNIT;API_CONTRACT;Contract verification for _pthread_fastqueueattr_setqueueaddr (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0041;REQ-API-0041;_pthread_information_get;UNIT;API_CONTRACT;Contract verification for _pthread_information_get (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0042;REQ-API-0042;_pthread_memory_manager_get;UNIT;API_CONTRACT;Contract verification for _pthread_memory_manager_get (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0043;REQ-API-0043;_pthread_memory_manager_set;UNIT;API_CONTRACT;Contract verification for _pthread_memory_manager_set (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0044;REQ-API-0044;_pthread_memorypool_allocate;UNIT;API_CONTRACT;Contract verification for _pthread_memorypool_allocate (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0045;REQ-API-0045;_pthread_memorypool_create;UNIT;API_CONTRACT;Contract verification for _pthread_memorypool_create (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0046;REQ-API-0046;_pthread_memorypool_destroy;UNIT;API_CONTRACT;Contract verification for _pthread_memorypool_destroy (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0047;REQ-API-0047;_pthread_memorypool_timedallocate;UNIT;API_CONTRACT;Contract verification for _pthread_memorypool_timedallocate (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0048;REQ-API-0048;_pthread_memorypool_tryallocate;UNIT;API_CONTRACT;Contract verification for _pthread_memorypool_tryallocate (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0049;REQ-API-0049;_pthread_memorypoolattr_destroy;UNIT;API_CONTRACT;Contract verification for _pthread_memorypoolattr_destroy (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0050;REQ-API-0050;_pthread_memorypoolattr_getcontroladdr;UNIT;API_CONTRACT;Contract verification for _pthread_memorypoolattr_getcontroladdr (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0051;REQ-API-0051;_pthread_memorypoolattr_getname;UNIT;API_CONTRACT;Contract verification for _pthread_memorypoolattr_getname (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0052;REQ-API-0052;_pthread_memorypoolattr_init;UNIT;API_CONTRACT;Contract verification for _pthread_memorypoolattr_init (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0053;REQ-API-0053;_pthread_memorypoolattr_setcontroladdr;UNIT;API_CONTRACT;Contract verification for _pthread_memorypoolattr_setcontroladdr (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0054;REQ-API-0054;_pthread_mutexattr_getcontroladdr;UNIT;API_CONTRACT;Contract verification for _pthread_mutexattr_getcontroladdr (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0055;REQ-API-0055;_pthread_mutexattr_getname;UNIT;API_CONTRACT;Contract verification for _pthread_mutexattr_getname (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0056;REQ-API-0056;_pthread_mutexattr_setcontroladdr;UNIT;API_CONTRACT;Contract verification for _pthread_mutexattr_setcontroladdr (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0057;REQ-API-0057;_pthread_mutexattr_setname;UNIT;API_CONTRACT;Contract verification for _pthread_mutexattr_setname (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0058;REQ-API-0058;_pthread_partitionpool_create;UNIT;API_CONTRACT;Contract verification for _pthread_partitionpool_create (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0059;REQ-API-0059;_pthread_partitionpool_destroy;UNIT;API_CONTRACT;Contract verification for _pthread_partitionpool_destroy (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0060;REQ-API-0060;_pthread_partitionpool_timedallocate;UNIT;API_CONTRACT;Contract verification for _pthread_partitionpool_timedallocate (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0061;REQ-API-0061;_pthread_partitionpool_tryallocate;UNIT;API_CONTRACT;Contract verification for _pthread_partitionpool_tryallocate (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0062;REQ-API-0062;_pthread_partitionpoolattr_destroy;UNIT;API_CONTRACT;Contract verification for _pthread_partitionpoolattr_destroy (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0063;REQ-API-0063;_pthread_partitionpoolattr_getcontroladdr;UNIT;API_CONTRACT;Contract verification for _pthread_partitionpoolattr_getcontroladdr (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0064;REQ-API-0064;_pthread_partitionpoolattr_getcontrolsize;UNIT;API_CONTRACT;Contract verification for _pthread_partitionpoolattr_getcontrolsize (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0065;REQ-API-0065;_pthread_partitionpoolattr_getname;UNIT;API_CONTRACT;Contract verification for _pthread_partitionpoolattr_getname (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0066;REQ-API-0066;_pthread_partitionpoolattr_init;UNIT;API_CONTRACT;Contract verification for _pthread_partitionpoolattr_init (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0067;REQ-API-0067;_pthread_partitionpoolattr_setcontroladdr;UNIT;API_CONTRACT;Contract verification for _pthread_partitionpoolattr_setcontroladdr (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0068;REQ-API-0068;_pthread_partitionpoolattr_setname;UNIT;API_CONTRACT;Contract verification for _pthread_partitionpoolattr_setname (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0069;REQ-API-0069;_pthread_priority_change;UNIT;API_CONTRACT;Contract verification for _pthread_priority_change (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0070;REQ-API-0070;_pthread_stack_check;UNIT;API_CONTRACT;Contract verification for _pthread_stack_check (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0071;REQ-API-0071;_pthread_start;UNIT;API_CONTRACT;Contract verification for _pthread_start (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0072;REQ-API-0072;_pthread_ticktimer_create;UNIT;API_CONTRACT;Contract verification for _pthread_ticktimer_create (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0073;REQ-API-0073;_pthread_ticktimerattr_destroy;UNIT;API_CONTRACT;Contract verification for _pthread_ticktimerattr_destroy (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0074;REQ-API-0074;_pthread_ticktimerattr_getcontroladdr;UNIT;API_CONTRACT;Contract verification for _pthread_ticktimerattr_getcontroladdr (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0075;REQ-API-0075;_pthread_ticktimerattr_getcontrolsize;UNIT;API_CONTRACT;Contract verification for _pthread_ticktimerattr_getcontrolsize (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0076;REQ-API-0076;_pthread_ticktimerattr_getname;UNIT;API_CONTRACT;Contract verification for _pthread_ticktimerattr_getname (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0077;REQ-API-0077;_pthread_ticktimerattr_setcontroladdr;UNIT;API_CONTRACT;Contract verification for _pthread_ticktimerattr_setcontroladdr (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0078;REQ-API-0078;_pthread_ticktimerattr_setname;UNIT;API_CONTRACT;Contract verification for _pthread_ticktimerattr_setname (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0079;REQ-API-0079;_sem_extend_init;UNIT;API_CONTRACT;Contract verification for _sem_extend_init (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0080;REQ-API-0080;_semattr_getcontrolsize;UNIT;API_CONTRACT;Contract verification for _semattr_getcontrolsize (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0081;REQ-API-0081;_semattr_getname;UNIT;API_CONTRACT;Contract verification for _semattr_getname (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0082;REQ-API-0082;_semattr_init;UNIT;API_CONTRACT;Contract verification for _semattr_init (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0083;REQ-API-0083;_semattr_setcontroladdr;UNIT;API_CONTRACT;Contract verification for _semattr_setcontroladdr (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0084;REQ-API-0084;astqueue_timedreceive;UNIT;API_CONTRACT;Contract verification for astqueue_timedreceive (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0085;REQ-API-0085;clock_getres;UNIT;API_CONTRACT;Contract verification for clock_getres (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0086;REQ-API-0086;clock_gettime;UNIT;API_CONTRACT;Contract verification for clock_gettime (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0087;REQ-API-0087;clock_settime;UNIT;API_CONTRACT;Contract verification for clock_settime (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0088;REQ-API-0088;d_memorypoolattr_getcontrolsize;UNIT;API_CONTRACT;Contract verification for d_memorypoolattr_getcontrolsize (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0089;REQ-API-0089;erattr_init;UNIT;API_CONTRACT;Contract verification for erattr_init (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0090;REQ-API-0090;laddr;UNIT;API_CONTRACT;Contract verification for laddr (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0091;REQ-API-0091;mpx_mq_extend_open_check_params;UNIT;API_CONTRACT;Contract verification for mpx_mq_extend_open_check_params (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0092;REQ-API-0092;mpx_mq_extendattr_destroy;UNIT;API_CONTRACT;Contract verification for mpx_mq_extendattr_destroy (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0093;REQ-API-0093;mpx_mq_extendattr_getcontroladdr;UNIT;API_CONTRACT;Contract verification for mpx_mq_extendattr_getcontroladdr (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0094;REQ-API-0094;mpx_mq_extendattr_getcontrolsize;UNIT;API_CONTRACT;Contract verification for mpx_mq_extendattr_getcontrolsize (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0095;REQ-API-0095;mpx_mq_extendattr_getqueueaddr;UNIT;API_CONTRACT;Contract verification for mpx_mq_extendattr_getqueueaddr (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0096;REQ-API-0096;mpx_mq_extendattr_getqueuesize;UNIT;API_CONTRACT;Contract verification for mpx_mq_extendattr_getqueuesize (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0097;REQ-API-0097;mpx_mq_extendattr_init;UNIT;API_CONTRACT;Contract verification for mpx_mq_extendattr_init (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0098;REQ-API-0098;mpx_mq_extendattr_setcontroladdr;UNIT;API_CONTRACT;Contract verification for mpx_mq_extendattr_setcontroladdr (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0099;REQ-API-0099;mpx_mq_extendattr_setqueueaddr;UNIT;API_CONTRACT;Contract verification for mpx_mq_extendattr_setqueueaddr (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0100;REQ-API-0100;mpx_pthread_attr_getcontroladdr;UNIT;API_CONTRACT;Contract verification for mpx_pthread_attr_getcontroladdr (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0101;REQ-API-0101;mpx_pthread_condattr_getcontrolsize;UNIT;API_CONTRACT;Contract verification for mpx_pthread_condattr_getcontrolsize (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0102;REQ-API-0102;mpx_pthread_event_flags_clear;UNIT;API_CONTRACT;Contract verification for mpx_pthread_event_flags_clear (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0103;REQ-API-0103;mpx_pthread_fastqueue_create;UNIT;API_CONTRACT;Contract verification for mpx_pthread_fastqueue_create (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0104;REQ-API-0104;mpx_pthread_fastqueueattr_getname;UNIT;API_CONTRACT;Contract verification for mpx_pthread_fastqueueattr_getname (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0105;REQ-API-0105;mpx_pthread_memory_manager_enable;UNIT;API_CONTRACT;Contract verification for mpx_pthread_memory_manager_enable (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0106;REQ-API-0106;mpx_pthread_memorypool_free;UNIT;API_CONTRACT;Contract verification for mpx_pthread_memorypool_free (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0107;REQ-API-0107;mpx_pthread_memorypoolattr_setname;UNIT;API_CONTRACT;Contract verification for mpx_pthread_memorypoolattr_setname (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0108;REQ-API-0108;mpx_pthread_mutexattr_getcontrolsize;UNIT;API_CONTRACT;Contract verification for mpx_pthread_mutexattr_getcontrolsize (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0109;REQ-API-0109;mpx_pthread_partitionpool_allocate;UNIT;API_CONTRACT;Contract verification for mpx_pthread_partitionpool_allocate (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0110;REQ-API-0110;mpx_pthread_partitionpool_free;UNIT;API_CONTRACT;Contract verification for mpx_pthread_partitionpool_free (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0111;REQ-API-0111;mpx_pthread_resume;UNIT;API_CONTRACT;Contract verification for mpx_pthread_resume (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0112;REQ-API-0112;mpx_pthread_suspend;UNIT;API_CONTRACT;Contract verification for mpx_pthread_suspend (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0113;REQ-API-0113;mpx_pthread_tick_sleep;UNIT;API_CONTRACT;Contract verification for mpx_pthread_tick_sleep (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0114;REQ-API-0114;mpx_pthread_ticks_get;UNIT;API_CONTRACT;Contract verification for mpx_pthread_ticks_get (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0115;REQ-API-0115;mpx_pthread_ticktimer_destroy;UNIT;API_CONTRACT;Contract verification for mpx_pthread_ticktimer_destroy (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0116;REQ-API-0116;mpx_pthread_ticktimer_start;UNIT;API_CONTRACT;Contract verification for mpx_pthread_ticktimer_start (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0117;REQ-API-0117;mpx_pthread_ticktimer_stop;UNIT;API_CONTRACT;Contract verification for mpx_pthread_ticktimer_stop (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0118;REQ-API-0118;mpx_pthread_ticktimer_update;UNIT;API_CONTRACT;Contract verification for mpx_pthread_ticktimer_update (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0119;REQ-API-0119;mpx_sem_timedwait;UNIT;API_CONTRACT;Contract verification for mpx_sem_timedwait (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0120;REQ-API-0120;mpx_semattr_destroy;UNIT;API_CONTRACT;Contract verification for mpx_semattr_destroy (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0121;REQ-API-0121;mpx_semattr_setname;UNIT;API_CONTRACT;Contract verification for mpx_semattr_setname (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0122;REQ-API-0122;mq_close;UNIT;API_CONTRACT;Contract verification for mq_close (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0123;REQ-API-0123;mq_getattr;UNIT;API_CONTRACT;Contract verification for mq_getattr (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0124;REQ-API-0124;mq_open;UNIT;API_CONTRACT;Contract verification for mq_open (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0125;REQ-API-0125;mq_receive;UNIT;API_CONTRACT;Contract verification for mq_receive (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0126;REQ-API-0126;mq_send;UNIT;API_CONTRACT;Contract verification for mq_send (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0127;REQ-API-0127;mq_setattr;UNIT;API_CONTRACT;Contract verification for mq_setattr (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0128;REQ-API-0128;mq_timedreceive;UNIT;API_CONTRACT;Contract verification for mq_timedreceive (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0129;REQ-API-0129;mq_timedsend;UNIT;API_CONTRACT;Contract verification for mq_timedsend (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0130;REQ-API-0130;nanosleep;UNIT;API_CONTRACT;Contract verification for nanosleep (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0131;REQ-API-0131;ontroladdr;UNIT;API_CONTRACT;Contract verification for ontroladdr (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0132;REQ-API-0132;pthread_attr_getdetachstate;UNIT;API_CONTRACT;Contract verification for pthread_attr_getdetachstate (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0133;REQ-API-0133;pthread_attr_getstackaddr;UNIT;API_CONTRACT;Contract verification for pthread_attr_getstackaddr (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0134;REQ-API-0134;pthread_attr_getstacksize;UNIT;API_CONTRACT;Contract verification for pthread_attr_getstacksize (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0135;REQ-API-0135;pthread_attr_init;UNIT;API_CONTRACT;Contract verification for pthread_attr_init (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0136;REQ-API-0136;pthread_attr_setdetachstate;UNIT;API_CONTRACT;Contract verification for pthread_attr_setdetachstate (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0137;REQ-API-0137;pthread_attr_setstackaddr;UNIT;API_CONTRACT;Contract verification for pthread_attr_setstackaddr (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0138;REQ-API-0138;pthread_attr_setstacksize;UNIT;API_CONTRACT;Contract verification for pthread_attr_setstacksize (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0139;REQ-API-0139;pthread_cancel;UNIT;API_CONTRACT;Contract verification for pthread_cancel (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0140;REQ-API-0140;pthread_cleanup_pop;UNIT;API_CONTRACT;Contract verification for pthread_cleanup_pop (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0141;REQ-API-0141;pthread_cleanup_push;UNIT;API_CONTRACT;Contract verification for pthread_cleanup_push (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0142;REQ-API-0142;pthread_cond_broadcast;UNIT;API_CONTRACT;Contract verification for pthread_cond_broadcast (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0143;REQ-API-0143;pthread_cond_destroy;UNIT;API_CONTRACT;Contract verification for pthread_cond_destroy (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0144;REQ-API-0144;pthread_cond_init;UNIT;API_CONTRACT;Contract verification for pthread_cond_init (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0145;REQ-API-0145;pthread_cond_signal;UNIT;API_CONTRACT;Contract verification for pthread_cond_signal (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0146;REQ-API-0146;pthread_cond_timedwait;UNIT;API_CONTRACT;Contract verification for pthread_cond_timedwait (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0147;REQ-API-0147;pthread_cond_wait;UNIT;API_CONTRACT;Contract verification for pthread_cond_wait (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0148;REQ-API-0148;pthread_condattr_destroy;UNIT;API_CONTRACT;Contract verification for pthread_condattr_destroy (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0149;REQ-API-0149;pthread_condattr_getpshared;UNIT;API_CONTRACT;Contract verification for pthread_condattr_getpshared (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0150;REQ-API-0150;pthread_condattr_init;UNIT;API_CONTRACT;Contract verification for pthread_condattr_init (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0151;REQ-API-0151;pthread_condattr_setpshared;UNIT;API_CONTRACT;Contract verification for pthread_condattr_setpshared (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0152;REQ-API-0152;pthread_create;UNIT;API_CONTRACT;Contract verification for pthread_create (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0153;REQ-API-0153;pthread_detach;UNIT;API_CONTRACT;Contract verification for pthread_detach (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0154;REQ-API-0154;pthread_equal;UNIT;API_CONTRACT;Contract verification for pthread_equal (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0155;REQ-API-0155;pthread_exit;UNIT;API_CONTRACT;Contract verification for pthread_exit (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0156;REQ-API-0156;pthread_join;UNIT;API_CONTRACT;Contract verification for pthread_join (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0157;REQ-API-0157;pthread_mutex_destroy;UNIT;API_CONTRACT;Contract verification for pthread_mutex_destroy (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0158;REQ-API-0158;pthread_mutex_init;UNIT;API_CONTRACT;Contract verification for pthread_mutex_init (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0159;REQ-API-0159;pthread_mutex_lock;UNIT;API_CONTRACT;Contract verification for pthread_mutex_lock (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0160;REQ-API-0160;pthread_mutex_trylock;UNIT;API_CONTRACT;Contract verification for pthread_mutex_trylock (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0161;REQ-API-0161;pthread_mutex_unlock;UNIT;API_CONTRACT;Contract verification for pthread_mutex_unlock (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0162;REQ-API-0162;pthread_mutexattr_destroy;UNIT;API_CONTRACT;Contract verification for pthread_mutexattr_destroy (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0163;REQ-API-0163;pthread_mutexattr_getprotocol;UNIT;API_CONTRACT;Contract verification for pthread_mutexattr_getprotocol (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0164;REQ-API-0164;pthread_mutexattr_getpshared;UNIT;API_CONTRACT;Contract verification for pthread_mutexattr_getpshared (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0165;REQ-API-0165;pthread_mutexattr_gettype;UNIT;API_CONTRACT;Contract verification for pthread_mutexattr_gettype (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0166;REQ-API-0166;pthread_mutexattr_init;UNIT;API_CONTRACT;Contract verification for pthread_mutexattr_init (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0167;REQ-API-0167;pthread_mutexattr_setprotocol;UNIT;API_CONTRACT;Contract verification for pthread_mutexattr_setprotocol (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0168;REQ-API-0168;pthread_mutexattr_setpshared;UNIT;API_CONTRACT;Contract verification for pthread_mutexattr_setpshared (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0169;REQ-API-0169;pthread_mutexattr_settype;UNIT;API_CONTRACT;Contract verification for pthread_mutexattr_settype (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0170;REQ-API-0170;pthread_self;UNIT;API_CONTRACT;Contract verification for pthread_self (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0171;REQ-API-0171;pthread_setcancelstate;UNIT;API_CONTRACT;Contract verification for pthread_setcancelstate (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0172;REQ-API-0172;pthread_setcanceltype;UNIT;API_CONTRACT;Contract verification for pthread_setcanceltype (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0173;REQ-API-0173;pthread_testcancel;UNIT;API_CONTRACT;Contract verification for pthread_testcancel (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0174;REQ-API-0174;sched_yield;UNIT;API_CONTRACT;Contract verification for sched_yield (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0175;REQ-API-0175;sem_destroy;UNIT;API_CONTRACT;Contract verification for sem_destroy (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0176;REQ-API-0176;sem_init;UNIT;API_CONTRACT;Contract verification for sem_init (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0177;REQ-API-0177;sem_post;UNIT;API_CONTRACT;Contract verification for sem_post (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0178;REQ-API-0178;sem_trywait;UNIT;API_CONTRACT;Contract verification for sem_trywait (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0179;REQ-API-0179;sem_wait;UNIT;API_CONTRACT;Contract verification for sem_wait (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0180;REQ-API-0180;sleep;UNIT;API_CONTRACT;Contract verification for sleep (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0181;REQ-API-0181;time;UNIT;API_CONTRACT;Contract verification for time (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-API-0182;REQ-API-0182;usleep;UNIT;API_CONTRACT;Contract verification for usleep (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
+TST-CT-0001;REQ-API-0085;clock_getres;UNIT;API_CONTRACT_TIME;Domain contract scaffold for clock_getres (User Manual-defined semantics).;PLANNED;AI-TestAgent
+TST-CT-0002;REQ-API-0086;clock_gettime;UNIT;API_CONTRACT_TIME;Domain contract scaffold for clock_gettime (User Manual-defined semantics).;PLANNED;AI-TestAgent
+TST-CT-0003;REQ-API-0087;clock_settime;UNIT;API_CONTRACT_TIME;Domain contract scaffold for clock_settime (User Manual-defined semantics).;PLANNED;AI-TestAgent
+TST-CT-0004;REQ-API-0092;mpx_mq_extendattr_destroy;UNIT;API_CONTRACT_MQ;Domain contract scaffold for mpx_mq_extendattr_destroy (User Manual-defined semantics).;PLANNED;AI-TestAgent
+TST-CT-0005;REQ-API-0093;mpx_mq_extendattr_getcontroladdr;UNIT;API_CONTRACT_MQ;Domain contract scaffold for mpx_mq_extendattr_getcontroladdr (User Manual-defined semantics).;PLANNED;AI-TestAgent
+TST-CT-0006;REQ-API-0094;mpx_mq_extendattr_getcontrolsize;UNIT;API_CONTRACT_MQ;Domain contract scaffold for mpx_mq_extendattr_getcontrolsize (User Manual-defined semantics).;PLANNED;AI-TestAgent
+TST-CT-0007;REQ-API-0095;mpx_mq_extendattr_getqueueaddr;UNIT;API_CONTRACT_MQ;Domain contract scaffold for mpx_mq_extendattr_getqueueaddr (User Manual-defined semantics).;PLANNED;AI-TestAgent
+TST-CT-0008;REQ-API-0096;mpx_mq_extendattr_getqueuesize;UNIT;API_CONTRACT_MQ;Domain contract scaffold for mpx_mq_extendattr_getqueuesize (User Manual-defined semantics).;PLANNED;AI-TestAgent
+TST-CT-0009;REQ-API-0097;mpx_mq_extendattr_init;UNIT;API_CONTRACT_MQ;Domain contract scaffold for mpx_mq_extendattr_init (User Manual-defined semantics).;PLANNED;AI-TestAgent
+TST-CT-0010;REQ-API-0098;mpx_mq_extendattr_setcontroladdr;UNIT;API_CONTRACT_MQ;Domain contract scaffold for mpx_mq_extendattr_setcontroladdr (User Manual-defined semantics).;PLANNED;AI-TestAgent
+TST-CT-0011;REQ-API-0099;mpx_mq_extendattr_setqueueaddr;UNIT;API_CONTRACT_MQ;Domain contract scaffold for mpx_mq_extendattr_setqueueaddr (User Manual-defined semantics).;PLANNED;AI-TestAgent
+TST-CT-0012;REQ-API-0100;mpx_pthread_attr_getcontroladdr;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for mpx_pthread_attr_getcontroladdr (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0013;REQ-API-0101;mpx_pthread_condattr_getcontrolsize;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for mpx_pthread_condattr_getcontrolsize (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0014;REQ-API-0102;mpx_pthread_event_flags_clear;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for mpx_pthread_event_flags_clear (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0015;REQ-API-0103;mpx_pthread_fastqueue_create;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for mpx_pthread_fastqueue_create (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0016;REQ-API-0104;mpx_pthread_fastqueueattr_getname;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for mpx_pthread_fastqueueattr_getname (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0017;REQ-API-0105;mpx_pthread_memory_manager_enable;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for mpx_pthread_memory_manager_enable (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0018;REQ-API-0106;mpx_pthread_memorypool_free;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for mpx_pthread_memorypool_free (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0019;REQ-API-0107;mpx_pthread_memorypoolattr_setname;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for mpx_pthread_memorypoolattr_setname (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0020;REQ-API-0108;mpx_pthread_mutexattr_getcontrolsize;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for mpx_pthread_mutexattr_getcontrolsize (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0021;REQ-API-0109;mpx_pthread_partitionpool_allocate;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for mpx_pthread_partitionpool_allocate (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0022;REQ-API-0110;mpx_pthread_partitionpool_free;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for mpx_pthread_partitionpool_free (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0023;REQ-API-0111;mpx_pthread_resume;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for mpx_pthread_resume (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0024;REQ-API-0112;mpx_pthread_suspend;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for mpx_pthread_suspend (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0025;REQ-API-0113;mpx_pthread_tick_sleep;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for mpx_pthread_tick_sleep (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0026;REQ-API-0114;mpx_pthread_ticks_get;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for mpx_pthread_ticks_get (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0027;REQ-API-0115;mpx_pthread_ticktimer_destroy;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for mpx_pthread_ticktimer_destroy (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0028;REQ-API-0116;mpx_pthread_ticktimer_start;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for mpx_pthread_ticktimer_start (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0029;REQ-API-0117;mpx_pthread_ticktimer_stop;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for mpx_pthread_ticktimer_stop (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0030;REQ-API-0118;mpx_pthread_ticktimer_update;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for mpx_pthread_ticktimer_update (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0031;REQ-API-0120;mpx_semattr_destroy;UNIT;API_CONTRACT_OTHER;Domain contract scaffold for mpx_semattr_destroy (User Manual-defined semantics).;PLANNED;AI-TestAgent
+TST-CT-0032;REQ-API-0121;mpx_semattr_setname;UNIT;API_CONTRACT_OTHER;Domain contract scaffold for mpx_semattr_setname (User Manual-defined semantics).;PLANNED;AI-TestAgent
+TST-CT-0033;REQ-API-0122;mq_close;UNIT;API_CONTRACT_MQ;Domain contract scaffold for mq_close (User Manual-defined semantics).;PLANNED;AI-TestAgent
+TST-CT-0034;REQ-API-0123;mq_getattr;UNIT;API_CONTRACT_MQ;Domain contract scaffold for mq_getattr (User Manual-defined semantics).;PLANNED;AI-TestAgent
+TST-CT-0035;REQ-API-0124;mq_open;UNIT;API_CONTRACT_MQ;Domain contract scaffold for mq_open (User Manual-defined semantics).;PLANNED;AI-TestAgent
+TST-CT-0036;REQ-API-0125;mq_receive;UNIT;API_CONTRACT_MQ;Domain contract scaffold for mq_receive (User Manual-defined semantics).;PLANNED;AI-TestAgent
+TST-CT-0037;REQ-API-0126;mq_send;UNIT;API_CONTRACT_MQ;Domain contract scaffold for mq_send (User Manual-defined semantics).;PLANNED;AI-TestAgent
+TST-CT-0038;REQ-API-0127;mq_setattr;UNIT;API_CONTRACT_MQ;Domain contract scaffold for mq_setattr (User Manual-defined semantics).;PLANNED;AI-TestAgent
+TST-CT-0039;REQ-API-0128;mq_timedreceive;UNIT;API_CONTRACT_MQ;Domain contract scaffold for mq_timedreceive (User Manual-defined semantics).;PLANNED;AI-TestAgent
+TST-CT-0040;REQ-API-0129;mq_timedsend;UNIT;API_CONTRACT_MQ;Domain contract scaffold for mq_timedsend (User Manual-defined semantics).;PLANNED;AI-TestAgent
+TST-CT-0041;REQ-API-0130;nanosleep;UNIT;API_CONTRACT_TIME;Domain contract scaffold for nanosleep (User Manual-defined semantics).;PLANNED;AI-TestAgent
+TST-CT-0042;REQ-API-0132;pthread_attr_getdetachstate;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_attr_getdetachstate (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0043;REQ-API-0133;pthread_attr_getstackaddr;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_attr_getstackaddr (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0044;REQ-API-0134;pthread_attr_getstacksize;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_attr_getstacksize (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0045;REQ-API-0135;pthread_attr_init;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_attr_init (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0046;REQ-API-0136;pthread_attr_setdetachstate;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_attr_setdetachstate (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0047;REQ-API-0137;pthread_attr_setstackaddr;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_attr_setstackaddr (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0048;REQ-API-0138;pthread_attr_setstacksize;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_attr_setstacksize (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0049;REQ-API-0139;pthread_cancel;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_cancel (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0050;REQ-API-0140;pthread_cleanup_pop;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_cleanup_pop (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0051;REQ-API-0141;pthread_cleanup_push;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_cleanup_push (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0052;REQ-API-0142;pthread_cond_broadcast;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_cond_broadcast (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0053;REQ-API-0143;pthread_cond_destroy;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_cond_destroy (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0054;REQ-API-0144;pthread_cond_init;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_cond_init (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0055;REQ-API-0145;pthread_cond_signal;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_cond_signal (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0056;REQ-API-0146;pthread_cond_timedwait;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_cond_timedwait (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0057;REQ-API-0147;pthread_cond_wait;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_cond_wait (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0058;REQ-API-0148;pthread_condattr_destroy;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_condattr_destroy (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0059;REQ-API-0149;pthread_condattr_getpshared;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_condattr_getpshared (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0060;REQ-API-0150;pthread_condattr_init;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_condattr_init (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0061;REQ-API-0151;pthread_condattr_setpshared;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_condattr_setpshared (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0062;REQ-API-0152;pthread_create;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_create (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0063;REQ-API-0153;pthread_detach;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_detach (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0064;REQ-API-0154;pthread_equal;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_equal (User Manual-defined semantics).;READY_FOR_IMPL;AI-TestAgent
+TST-CT-0065;REQ-API-0155;pthread_exit;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_exit (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0066;REQ-API-0156;pthread_join;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_join (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0067;REQ-API-0157;pthread_mutex_destroy;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_mutex_destroy (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0068;REQ-API-0158;pthread_mutex_init;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_mutex_init (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0069;REQ-API-0159;pthread_mutex_lock;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_mutex_lock (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0070;REQ-API-0160;pthread_mutex_trylock;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_mutex_trylock (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0071;REQ-API-0161;pthread_mutex_unlock;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_mutex_unlock (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0072;REQ-API-0162;pthread_mutexattr_destroy;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_mutexattr_destroy (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0073;REQ-API-0163;pthread_mutexattr_getprotocol;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_mutexattr_getprotocol (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0074;REQ-API-0164;pthread_mutexattr_getpshared;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_mutexattr_getpshared (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0075;REQ-API-0165;pthread_mutexattr_gettype;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_mutexattr_gettype (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0076;REQ-API-0166;pthread_mutexattr_init;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_mutexattr_init (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0077;REQ-API-0167;pthread_mutexattr_setprotocol;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_mutexattr_setprotocol (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0078;REQ-API-0168;pthread_mutexattr_setpshared;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_mutexattr_setpshared (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0079;REQ-API-0169;pthread_mutexattr_settype;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_mutexattr_settype (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0080;REQ-API-0170;pthread_self;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_self (User Manual-defined semantics).;READY_FOR_IMPL;AI-TestAgent
+TST-CT-0081;REQ-API-0171;pthread_setcancelstate;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_setcancelstate (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0082;REQ-API-0172;pthread_setcanceltype;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_setcanceltype (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0083;REQ-API-0173;pthread_testcancel;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_testcancel (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0084;REQ-API-0174;sched_yield;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for sched_yield (User Manual-defined semantics).;READY_FOR_IMPL;AI-TestAgent
+TST-CT-0085;REQ-API-0175;sem_destroy;UNIT;API_CONTRACT_SYNC;Domain contract scaffold for sem_destroy (User Manual-defined semantics).;READY_FOR_IMPL;AI-TestAgent
+TST-CT-0086;REQ-API-0176;sem_init;UNIT;API_CONTRACT_SYNC;Domain contract scaffold for sem_init (User Manual-defined semantics).;READY_FOR_IMPL;AI-TestAgent
+TST-CT-0087;REQ-API-0177;sem_post;UNIT;API_CONTRACT_SYNC;Domain contract scaffold for sem_post (User Manual-defined semantics).;READY_FOR_IMPL;AI-TestAgent
+TST-CT-0088;REQ-API-0178;sem_trywait;UNIT;API_CONTRACT_SYNC;Domain contract scaffold for sem_trywait (User Manual-defined semantics).;READY_FOR_IMPL;AI-TestAgent
+TST-CT-0089;REQ-API-0179;sem_wait;UNIT;API_CONTRACT_SYNC;Domain contract scaffold for sem_wait (User Manual-defined semantics).;READY_FOR_IMPL;AI-TestAgent
+TST-CT-0090;REQ-API-0180;sleep;UNIT;API_CONTRACT_TIME;Domain contract scaffold for sleep (User Manual-defined semantics).;PLANNED;AI-TestAgent
+TST-CT-0091;REQ-API-0181;time;UNIT;API_CONTRACT_TIME;Domain contract scaffold for time (User Manual-defined semantics).;PLANNED;AI-TestAgent
+TST-CT-0092;REQ-API-0182;usleep;UNIT;API_CONTRACT_TIME;Domain contract scaffold for usleep (User Manual-defined semantics).;PLANNED;AI-TestAgent
