@@ -17,11 +17,18 @@ static int st_param_validation(void) {
 }
 
 static int st_state_errors(void) {
-  return mpx_tbd("state/lifecycle errors (invalid state -> expected return/errno)");
+  errno = 0;
+  int rc = (int)mpx_pthread_ticks_get();
+  if (rc != -1) return 1;
+  if (errno == 0) return 1;
+  return 0;
 }
 
 static int st_success_path(void) {
-  return mpx_tbd("success path (expected return, errno behavior, side-effects)");
+  (void)0;
+  /* Success path requires valid object setup; keep non-blocking during scaffolding. */
+  (void)mpx_pthread_ticks_get();
+  return mpx_tbd("success path requires valid object setup");
 }
 
 int main(void) {

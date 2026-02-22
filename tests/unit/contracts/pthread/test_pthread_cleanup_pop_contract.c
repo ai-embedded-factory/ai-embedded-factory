@@ -13,11 +13,14 @@ static int st_param_validation(void) {
 }
 
 static int st_state_errors(void) {
-  return mpx_tbd("state/lifecycle errors (invalid state -> expected return/errno)");
+  return mpx_tbd("state/lifecycle errors (void-return API)");
 }
 
 static int st_success_path(void) {
-  return mpx_tbd("success path (expected return, errno behavior, side-effects)");
+  (void)0;
+  /* Success path requires valid object setup; keep non-blocking during scaffolding. */
+  (void)pthread_cleanup_pop(0);
+  return mpx_tbd("success path requires valid object setup");
 }
 
 int main(void) {
