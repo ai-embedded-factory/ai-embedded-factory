@@ -1,20 +1,24 @@
-# Contract Testing Approach
+# Contract Testing Approach (Domain-Based)
 
-## Goal
-Evolve from smoke tests (plumbing) to contract tests (behavior) per API.
+## Domain Order
+1. Threads & Scheduling (pthread / mpx_pthread / sched)
+2. Synchronization (mutex/cond/sem)
+3. Time Services (clock/timer/sleep)
+4. Message Queues (mq)
+5. Other APIs
 
 ## Current State
-- Contract test skeletons are generated for APIs that have **normative definitions** in the User Manual.
-- While the implementation is stubbed, tests **skip** when `errno == ENOSYS`.
+- Domain contract scaffolds are generated under `tests/unit/contracts/<domain>/`.
+- While the implementation is stubbed, tests **SKIP** when `errno == ENOSYS`.
 
-## Next Step
-For each API:
-1. Replace the stub with real implementation (or link to real code).
-2. Replace the placeholder assertions with:
-   - parameter validation checks
-   - state transition checks
-   - success path checks
-   - exact errno mapping
-3. Once the contract test passes, update:
-   - `requirements/TRACE_MATRIX.csv` row for the API: set `verify_status=APPROVED` and populate `code_ref`
-   - keep `test_id` pointing to the contract test used for evidence.
+## Hardening Checklist (per API)
+1. Parameter validation: invalid args → expected return + `errno`
+2. State machine errors: invalid lifecycle/state → expected return + `errno`
+3. Success path: expected return + `errno` unchanged/expected
+4. Side-effects: object state changes consistent with MPX
+5. Evidence: CI logs + trace update
+
+## Traceability Rule
+Only when a contract test is hardened and passing against real code:
+- Set the API row in `requirements/TRACE_MATRIX.csv` to `APPROVED`
+- Populate `code_ref` and choose the evidence `test_id` (prefer the contract test)
