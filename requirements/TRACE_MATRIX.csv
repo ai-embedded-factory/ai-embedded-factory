@@ -1,0 +1,2 @@
+req_id;title;arch_id;design_id;code_ref;test_id;verify_status;notes
+REQ-0001;Preemptive scheduler;ARCH-0001;DES-0001;src/kernel/sched.c;TST-0001;PLANNED;
