@@ -25,3 +25,6 @@ ctest --test-dir build --output-on-failure
 ## Contract Tests
 - Generated contract skeletons: `tests/unit/contracts/`
 - Method: skip while stubbed (errno==ENOSYS), then harden into normative assertions.
+
+## Contract Matrices
+- `verification/contracts/` (CSV delimiter: `;`).
