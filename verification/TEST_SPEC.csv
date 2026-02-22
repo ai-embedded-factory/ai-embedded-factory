@@ -265,11 +265,11 @@ TST-CT-0081;REQ-API-0171;pthread_setcancelstate;UNIT;API_CONTRACT_PTHREAD;Domain
 TST-CT-0082;REQ-API-0172;pthread_setcanceltype;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_setcanceltype (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
 TST-CT-0083;REQ-API-0173;pthread_testcancel;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_testcancel (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
 TST-CT-0084;REQ-API-0174;sched_yield;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for sched_yield (User Manual-defined semantics).;READY_FOR_IMPL;AI-TestAgent
-TST-CT-0085;REQ-API-0175;sem_destroy;UNIT;API_CONTRACT_SYNC;Domain contract scaffold for sem_destroy (User Manual-defined semantics).;PLANNED;AI-TestAgent
-TST-CT-0086;REQ-API-0176;sem_init;UNIT;API_CONTRACT_SYNC;Domain contract scaffold for sem_init (User Manual-defined semantics).;PLANNED;AI-TestAgent
-TST-CT-0087;REQ-API-0177;sem_post;UNIT;API_CONTRACT_SYNC;Domain contract scaffold for sem_post (User Manual-defined semantics).;PLANNED;AI-TestAgent
-TST-CT-0088;REQ-API-0178;sem_trywait;UNIT;API_CONTRACT_SYNC;Domain contract scaffold for sem_trywait (User Manual-defined semantics).;PLANNED;AI-TestAgent
-TST-CT-0089;REQ-API-0179;sem_wait;UNIT;API_CONTRACT_SYNC;Domain contract scaffold for sem_wait (User Manual-defined semantics).;PLANNED;AI-TestAgent
+TST-CT-0085;REQ-API-0175;sem_destroy;UNIT;API_CONTRACT_SYNC;Domain contract scaffold for sem_destroy (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0086;REQ-API-0176;sem_init;UNIT;API_CONTRACT_SYNC;Domain contract scaffold for sem_init (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0087;REQ-API-0177;sem_post;UNIT;API_CONTRACT_SYNC;Domain contract scaffold for sem_post (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0088;REQ-API-0178;sem_trywait;UNIT;API_CONTRACT_SYNC;Domain contract scaffold for sem_trywait (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0089;REQ-API-0179;sem_wait;UNIT;API_CONTRACT_SYNC;Domain contract scaffold for sem_wait (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
 TST-CT-0090;REQ-API-0180;sleep;UNIT;API_CONTRACT_TIME;Domain contract scaffold for sleep (User Manual-defined semantics).;PLANNED;AI-TestAgent
 TST-CT-0091;REQ-API-0181;time;UNIT;API_CONTRACT_TIME;Domain contract scaffold for time (User Manual-defined semantics).;PLANNED;AI-TestAgent
 TST-CT-0092;REQ-API-0182;usleep;UNIT;API_CONTRACT_TIME;Domain contract scaffold for usleep (User Manual-defined semantics).;PLANNED;AI-TestAgent
