@@ -1,18 +1,17 @@
-# Sync Domain Hardening — Step 2 (Parameter Validation)
+# Sync Domain Hardening — Step 3 (State/Lifecycle Errors)
 
 ## What changed
-- Implemented `st_param_validation()` for sync-domain contract tests using invalid pointer/object patterns.
-- Enriched `CONTRACTS_SYNC.csv` with baseline expectations for:
-  - parameter validation
-  - state errors
-  - success path
+- Implemented `st_state_errors()` for sync-domain contract tests using invalid-state patterns:
+  - non-NULL invalid pointers (e.g., `(void*)1`)
+  - invalid scalar values
+- `errno` expectations are checked when symbols are available in the contract matrix.
 
-## Test behavior while stubbed
-- Phase 0 performs a call and **SKIPs** if `errno == ENOSYS`.
-- Contract subtests run only when real implementation is linked.
+## Notes
+- This is a best-effort negative-path harness. Exact lifecycle scenarios (destroyed/busy objects)
+  will be encoded once real object setup exists (Step 4/5).
 
-## Next (Step 3)
-- Implement `st_state_errors()`:
-  - destroyed/uninitialized objects
-  - busy objects (e.g., sem_destroy with waiting threads)
-- Start low-setup success paths where feasible (init/destroy, trylock).
+## Next (Step 4)
+- Implement low-setup success paths:
+  - init/destroy pairs
+  - trylock where available
+  - basic semaphore post/wait when init is available
