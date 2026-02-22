@@ -1,14 +1,15 @@
-# Sync Domain Hardening — Step 4 (Low-Setup Success Paths)
+# Sync Domain Hardening — Step 5 (Real Lifecycle Scenarios)
 
 ## What changed
-- Implemented **success path** assertions for low-setup sync APIs where a minimal setup is feasible:
-  - Semaphores: init/destroy/post/wait/trywait (when available)
-  - Mutexes: init/destroy/lock/trylock/unlock (when available)
-  - Condition variables: init/destroy (when available)
+- Replaced generic invalid-pointer lifecycle checks with **real lifecycle scenarios** where feasible:
+  - Semaphores: double-destroy; use-after-destroy (post/wait/trywait)
+  - Mutexes: destroy-while-locked; use-after-destroy (lock/trylock/unlock)
+  - Condition variables: double-destroy; use-after-destroy (signal/broadcast) when available
+- Updated `CONTRACTS_SYNC.csv` notes to reflect the lifecycle test matrix.
 
 ## Behavior while stubbed
-- Each test still **SKIPs** when `errno == ENOSYS`.
+- Tests still SKIP when `errno == ENOSYS` (Phase 0).
 
-## Next (Step 5)
-- Replace generic lifecycle patterns with real scenarios (busy/destroyed objects).
-- Tighten errno mapping per API based on the User Manual.
+## Next
+- Tighten exact errno/error-code mapping per API using the User Manual (replace set-membership with exact expectations).
+- Add multi-thread scenarios (e.g., `sem_destroy` with waiters) once a minimal thread runner exists.
