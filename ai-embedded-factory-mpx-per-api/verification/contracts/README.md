@@ -10,3 +10,5 @@ This folder contains domain contract matrices used to harden tests.
 3. When hardened and passing against real code, mark the API requirement `APPROVED` in `requirements/TRACE_MATRIX.csv` and populate `code_ref`.
 
 - `CONTRACTS_SYNC.csv` (delimiter: `;`)
+
+- `CONTRACTS_TIME.csv` (delimiter: `;`)
