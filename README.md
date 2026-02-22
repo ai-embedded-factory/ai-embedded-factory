@@ -21,3 +21,7 @@ cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Debug
 cmake --build build
 ctest --test-dir build --output-on-failure
 ```
+
+## Contract Tests
+- Generated contract skeletons: `tests/unit/contracts/`
+- Method: skip while stubbed (errno==ENOSYS), then harden into normative assertions.
