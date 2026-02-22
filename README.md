@@ -1,12 +1,12 @@
-# MPX RTOS Clone — Spec & Trace Baseline (Updated Reference Card)
+# MPX RTOS Clone — Per-API SRS & Trace Baseline
 
-This repository contains the initial **English** specification baseline to implement a **1:1 behavioral clone** of MPX RTOS v1.0.0,
-derived strictly from:
-- the **updated** Reference Card (API surface)
-- the User Manual v1.0.0 (API semantics)
+This repository contains an **English** per-API SRS baseline for a **1:1 behavioral clone** of MPX RTOS v1.0.0.
 
-## Key artifacts
-- `requirements/SRS.md`
-- `requirements/API_CATALOG.md` (updated)
-- `requirements/TRACE_MATRIX.csv` (delimiter: ';')
-- `tools/trace/trace_check.py` (delimiter: ';')
+## Artifacts
+- `requirements/SRS.md` — per-API requirements (REQ-API-xxxx)
+- `requirements/TRACE_MATRIX.csv` — trace backbone (delimiter: `;`)
+- `tools/trace/trace_check.py` — CI trace gate
+
+## Notes
+- For APIs defined in the User Manual, semantics are normative.
+- For APIs only present in the Reference Card, surface is normative; behavior must match MPX.

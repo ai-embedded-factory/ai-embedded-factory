@@ -1,16 +1,12 @@
-# Architecture — MPX RTOS Clone (Baseline)
+# Architecture — MPX RTOS Clone (Per-API Baseline)
 
 ## ARCH-0001 Boot/Start
-Implements `mpx_pthread_start()` flow per User Manual (init, binding verification, `main` upscaling).
+- Implements `mpx_pthread_start()` per User Manual.
 
-## ARCH-0002 API Layer
-Implements all APIs listed in the **updated** Reference Card, with normative semantics from the User Manual where available.
-
-## ARCH-0003 Context & RT Semantics
-Enforces callable context and real-time scenario (preemption) semantics.
-
-## ARCH-0004 Error / errno Model
-Centralized mapping to documented errno conditions.
+## ARCH-0002 API Surface & Services
+- Implements full API surface listed in updated Reference Card.
+- For APIs defined in User Manual Chapter 7, semantics are normative.
 
 ## ARCH-0005 Traceability & Evidence
-Semicolon-separated trace matrix with CI gate.
+- `requirements/TRACE_MATRIX.csv` (';') is the trace backbone.
+- CI enforces trace gate for APPROVED rows.

@@ -1,8 +1,7 @@
 # Interface Control Document (ICD)
 
 ## Public Interfaces
-- Complete API surface as listed in the updated Reference Card
-- Normative behavioral semantics for APIs defined in the User Manual (Chapter 7)
+- All APIs listed in the updated Reference Card (see `requirements/SRS.md` per-API section).
 
 ## Traceability
-Each interface maps to requirements, code, and tests in `requirements/TRACE_MATRIX.csv` (';' delimiter).
+- Each API requirement REQ-API-xxxx traces to code and tests in `requirements/TRACE_MATRIX.csv`.

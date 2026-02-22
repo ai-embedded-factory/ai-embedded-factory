@@ -16,7 +16,7 @@ def main(path: str) -> int:
             req = (row.get("req_id") or "").strip()
             code = (row.get("code_ref") or "").strip()
             tst  = (row.get("test_id") or "").strip()
-            st   = (row.get("verify_status") or "").strip()
+            st   = (row.get("verify_status") or "").strip().upper()
 
             if not req:
                 print(f"ERROR L{i}: empty req_id")

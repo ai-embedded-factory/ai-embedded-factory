@@ -1,7 +1,186 @@
 req_id;title;source;arch_id;design_id;code_ref;test_id;verify_status;notes
 REQ-SYS-0001;System start via mpx_pthread_start;User Manual;ARCH-0001;DES-0001;;;PLANNED;Start flow per User Manual
-REQ-SYS-0002;Full API surface per updated Reference Card;Reference Card;ARCH-0002;DES-0002;;;PLANNED;See API_CATALOG.md (updated)
-REQ-SYS-0003;Callable context constraints per API;User Manual;ARCH-0003;DES-0003;;;PLANNED;Enforce 'Callable From' rules
-REQ-SYS-0004;Real-time scenario semantics per API;User Manual;ARCH-0003;DES-0003;;;PLANNED;Match preemption statements
-REQ-SYS-0005;Return codes and errno model per API;User Manual;ARCH-0004;DES-0004;;;PLANNED;Return codes + errno
-REQ-SYS-0006;Traceability enforced via semicolon CSV gate;Both;ARCH-0005;DES-0005;;;PLANNED;tools/trace/trace_check.py
+REQ-SYS-0002;Full API surface per updated Reference Card;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Per-API requirements REQ-API-xxxx
+REQ-SYS-0003;Traceability enforced via semicolon CSV gate;Both;ARCH-0005;DES-0005;tools/trace/trace_check.py;TST-GATE-0001;APPROVED;"CI gate for ';' CSV; blocks APPROVED rows missing code/test"
+REQ-API-0001;API _mq_extend_open;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0002;API _pthread_attr_getcontrolsize;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0003;API _pthread_attr_getname;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0004;API _pthread_attr_getpriority;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0005;API _pthread_attr_gettimeslice;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0006;API _pthread_attr_setcontroladdr;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0007;API _pthread_attr_setname;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0008;API _pthread_attr_setpriority;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0009;API _pthread_attr_settimeslice;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0010;API _pthread_condattr_getcontroladdr;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0011;API _pthread_condattr_getname;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0012;API _pthread_condattr_setcontroladdr;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0013;API _pthread_condattr_setname;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0014;API _pthread_event_flags_create;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0015;API _pthread_event_flags_destroy;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0016;API _pthread_event_flags_set;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0017;API _pthread_event_flags_timedwait;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0018;API _pthread_event_flags_trywait;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0019;API _pthread_event_flags_wait;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0020;API _pthread_event_flagsattr_destroy;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0021;API _pthread_event_flagsattr_getcontrolsize;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0022;API _pthread_event_flagsattr_getname;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0023;API _pthread_event_flagsattr_init;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0024;API _pthread_event_flagsattr_setcontroladdr;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0025;API _pthread_event_flagsattr_setname;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0026;API _pthread_fastqueue_destroy;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0027;API _pthread_fastqueue_receive;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0028;API _pthread_fastqueue_send;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0029;API _pthread_fastqueue_timedsend;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0030;API _pthread_fastqueue_tryreceive;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0031;API _pthread_fastqueue_trysend;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0032;API _pthread_fastqueueattr_destroy;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0033;API _pthread_fastqueueattr_getcontroladdr;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0034;API _pthread_fastqueueattr_getcontrolsize;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0035;API _pthread_fastqueueattr_getqueueaddr;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0036;API _pthread_fastqueueattr_getqueuesize;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0037;API _pthread_fastqueueattr_init;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0038;API _pthread_fastqueueattr_setcontroladdr;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0039;API _pthread_fastqueueattr_setname;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0040;API _pthread_fastqueueattr_setqueueaddr;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0041;API _pthread_information_get;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0042;API _pthread_memory_manager_get;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0043;API _pthread_memory_manager_set;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0044;API _pthread_memorypool_allocate;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0045;API _pthread_memorypool_create;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0046;API _pthread_memorypool_destroy;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0047;API _pthread_memorypool_timedallocate;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0048;API _pthread_memorypool_tryallocate;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0049;API _pthread_memorypoolattr_destroy;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0050;API _pthread_memorypoolattr_getcontroladdr;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0051;API _pthread_memorypoolattr_getname;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0052;API _pthread_memorypoolattr_init;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0053;API _pthread_memorypoolattr_setcontroladdr;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0054;API _pthread_mutexattr_getcontroladdr;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0055;API _pthread_mutexattr_getname;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0056;API _pthread_mutexattr_setcontroladdr;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0057;API _pthread_mutexattr_setname;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0058;API _pthread_partitionpool_create;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0059;API _pthread_partitionpool_destroy;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0060;API _pthread_partitionpool_timedallocate;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0061;API _pthread_partitionpool_tryallocate;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0062;API _pthread_partitionpoolattr_destroy;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0063;API _pthread_partitionpoolattr_getcontroladdr;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0064;API _pthread_partitionpoolattr_getcontrolsize;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0065;API _pthread_partitionpoolattr_getname;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0066;API _pthread_partitionpoolattr_init;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0067;API _pthread_partitionpoolattr_setcontroladdr;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0068;API _pthread_partitionpoolattr_setname;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0069;API _pthread_priority_change;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0070;API _pthread_stack_check;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0071;API _pthread_start;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0072;API _pthread_ticktimer_create;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0073;API _pthread_ticktimerattr_destroy;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0074;API _pthread_ticktimerattr_getcontroladdr;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0075;API _pthread_ticktimerattr_getcontrolsize;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0076;API _pthread_ticktimerattr_getname;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0077;API _pthread_ticktimerattr_setcontroladdr;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0078;API _pthread_ticktimerattr_setname;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0079;API _sem_extend_init;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0080;API _semattr_getcontrolsize;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0081;API _semattr_getname;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0082;API _semattr_init;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0083;API _semattr_setcontroladdr;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0084;API astqueue_timedreceive;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0085;API clock_getres;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0086;API clock_gettime;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0087;API clock_settime;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0088;API d_memorypoolattr_getcontrolsize;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0089;API erattr_init;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0090;API laddr;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0091;API mpx_mq_extend_open_check_params;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0092;API mpx_mq_extendattr_destroy;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0093;API mpx_mq_extendattr_getcontroladdr;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0094;API mpx_mq_extendattr_getcontrolsize;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0095;API mpx_mq_extendattr_getqueueaddr;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0096;API mpx_mq_extendattr_getqueuesize;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0097;API mpx_mq_extendattr_init;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0098;API mpx_mq_extendattr_setcontroladdr;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0099;API mpx_mq_extendattr_setqueueaddr;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0100;API mpx_pthread_attr_getcontroladdr;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0101;API mpx_pthread_condattr_getcontrolsize;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0102;API mpx_pthread_event_flags_clear;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0103;API mpx_pthread_fastqueue_create;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0104;API mpx_pthread_fastqueueattr_getname;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0105;API mpx_pthread_memory_manager_enable;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0106;API mpx_pthread_memorypool_free;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0107;API mpx_pthread_memorypoolattr_setname;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0108;API mpx_pthread_mutexattr_getcontrolsize;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0109;API mpx_pthread_partitionpool_allocate;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0110;API mpx_pthread_partitionpool_free;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0111;API mpx_pthread_resume;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0112;API mpx_pthread_suspend;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0113;API mpx_pthread_tick_sleep;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0114;API mpx_pthread_ticks_get;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0115;API mpx_pthread_ticktimer_destroy;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0116;API mpx_pthread_ticktimer_start;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0117;API mpx_pthread_ticktimer_stop;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0118;API mpx_pthread_ticktimer_update;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0119;API mpx_sem_timedwait;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0120;API mpx_semattr_destroy;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0121;API mpx_semattr_setname;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0122;API mq_close;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0123;API mq_getattr;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0124;API mq_open;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0125;API mq_receive;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0126;API mq_send;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0127;API mq_setattr;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0128;API mq_timedreceive;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0129;API mq_timedsend;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0130;API nanosleep;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0131;API ontroladdr;Reference Card;ARCH-0002;DES-0002;;;PLANNED;Surface only in provided docs
+REQ-API-0132;API pthread_attr_getdetachstate;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0133;API pthread_attr_getstackaddr;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0134;API pthread_attr_getstacksize;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0135;API pthread_attr_init;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0136;API pthread_attr_setdetachstate;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0137;API pthread_attr_setstackaddr;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0138;API pthread_attr_setstacksize;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0139;API pthread_cancel;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0140;API pthread_cleanup_pop;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0141;API pthread_cleanup_push;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0142;API pthread_cond_broadcast;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0143;API pthread_cond_destroy;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0144;API pthread_cond_init;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0145;API pthread_cond_signal;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0146;API pthread_cond_timedwait;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0147;API pthread_cond_wait;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0148;API pthread_condattr_destroy;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0149;API pthread_condattr_getpshared;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0150;API pthread_condattr_init;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0151;API pthread_condattr_setpshared;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0152;API pthread_create;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0153;API pthread_detach;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0154;API pthread_equal;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0155;API pthread_exit;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0156;API pthread_join;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0157;API pthread_mutex_destroy;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0158;API pthread_mutex_init;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0159;API pthread_mutex_lock;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0160;API pthread_mutex_trylock;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0161;API pthread_mutex_unlock;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0162;API pthread_mutexattr_destroy;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0163;API pthread_mutexattr_getprotocol;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0164;API pthread_mutexattr_getpshared;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0165;API pthread_mutexattr_gettype;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0166;API pthread_mutexattr_init;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0167;API pthread_mutexattr_setprotocol;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0168;API pthread_mutexattr_setpshared;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0169;API pthread_mutexattr_settype;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0170;API pthread_self;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0171;API pthread_setcancelstate;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0172;API pthread_setcanceltype;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0173;API pthread_testcancel;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0174;API sched_yield;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0175;API sem_destroy;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0176;API sem_init;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0177;API sem_post;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0178;API sem_trywait;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0179;API sem_wait;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0180;API sleep;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0181;API time;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
+REQ-API-0182;API usleep;User Manual;ARCH-0002;DES-0002;;;PLANNED;Normative semantics in User Manual Chapter 7
