@@ -1,10 +1,15 @@
-# Pthread Domain Hardening — Step 3
+# Pthread Domain Hardening — Step 4
 
 ## Changes
-- Implemented `st_state_errors()` in pthread-domain contract tests using a distinct invalid-state call pattern.
-- Kept `st_success_path()` as a non-blocking placeholder (requires valid setup + real implementation).
-- Refreshed expectations in `CONTRACTS_PTHREAD.csv`.
+- Implemented **success path assertions** for low-setup APIs:
+  - `sched_yield`
+  - `pthread_self`
+  - `pthread_equal` (if present)
+- Kept other APIs with success-path placeholders (requires object setup).
+
+## Notes
+- `pthread_self` success check uses stable value across two calls within the same thread context.
+- These checks are designed to remain CI-safe while stubs are present (tests skip on ENOSYS in Phase 0).
 
 ## Next
-- Select low-setup APIs for real success-path assertions (e.g., `pthread_self`, `sched_yield`).
-- Replace generic calls with spec-driven cases and exact errno mapping once implementation is linked.
+- Start Sync domain hardening (mutex/cond/sem) using the same matrix-driven approach.

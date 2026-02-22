@@ -25,10 +25,10 @@ static int st_state_errors(void) {
 }
 
 static int st_success_path(void) {
-  (void)0;
-  /* Success path requires valid object setup; keep non-blocking during scaffolding. */
-  (void)pthread_equal(0, 0);
-  return mpx_tbd("success path requires valid object setup");
+  errno = 0;
+  int eq = (int)pthread_equal(0, 0);
+  if (errno != 0) return 1;
+  return (eq != 0) ? 0 : 1;
 }
 
 int main(void) {

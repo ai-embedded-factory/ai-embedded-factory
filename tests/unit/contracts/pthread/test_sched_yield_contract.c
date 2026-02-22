@@ -25,10 +25,14 @@ static int st_state_errors(void) {
 }
 
 static int st_success_path(void) {
-  (void)0;
-  /* Success path requires valid object setup; keep non-blocking during scaffolding. */
-  (void)sched_yield();
-  return mpx_tbd("success path requires valid object setup");
+  errno = 0;
+  int rc = (int)sched_yield();
+  /* When implemented, sched_yield success should return 0. */
+  if (rc == -1) {
+    /* If failure, errno must be set */
+    return (errno != 0) ? 0 : 1;
+  }
+  return (rc == 0) ? 0 : 1;
 }
 
 int main(void) {

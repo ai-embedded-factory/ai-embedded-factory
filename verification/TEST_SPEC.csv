@@ -244,7 +244,7 @@ TST-CT-0060;REQ-API-0150;pthread_condattr_init;UNIT;API_CONTRACT_PTHREAD;Domain 
 TST-CT-0061;REQ-API-0151;pthread_condattr_setpshared;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_condattr_setpshared (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
 TST-CT-0062;REQ-API-0152;pthread_create;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_create (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
 TST-CT-0063;REQ-API-0153;pthread_detach;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_detach (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
-TST-CT-0064;REQ-API-0154;pthread_equal;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_equal (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0064;REQ-API-0154;pthread_equal;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_equal (User Manual-defined semantics).;READY_FOR_IMPL;AI-TestAgent
 TST-CT-0065;REQ-API-0155;pthread_exit;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_exit (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
 TST-CT-0066;REQ-API-0156;pthread_join;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_join (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
 TST-CT-0067;REQ-API-0157;pthread_mutex_destroy;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_mutex_destroy (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
@@ -260,11 +260,11 @@ TST-CT-0076;REQ-API-0166;pthread_mutexattr_init;UNIT;API_CONTRACT_PTHREAD;Domain
 TST-CT-0077;REQ-API-0167;pthread_mutexattr_setprotocol;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_mutexattr_setprotocol (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
 TST-CT-0078;REQ-API-0168;pthread_mutexattr_setpshared;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_mutexattr_setpshared (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
 TST-CT-0079;REQ-API-0169;pthread_mutexattr_settype;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_mutexattr_settype (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
-TST-CT-0080;REQ-API-0170;pthread_self;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_self (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0080;REQ-API-0170;pthread_self;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_self (User Manual-defined semantics).;READY_FOR_IMPL;AI-TestAgent
 TST-CT-0081;REQ-API-0171;pthread_setcancelstate;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_setcancelstate (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
 TST-CT-0082;REQ-API-0172;pthread_setcanceltype;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_setcanceltype (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
 TST-CT-0083;REQ-API-0173;pthread_testcancel;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_testcancel (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
-TST-CT-0084;REQ-API-0174;sched_yield;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for sched_yield (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0084;REQ-API-0174;sched_yield;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for sched_yield (User Manual-defined semantics).;READY_FOR_IMPL;AI-TestAgent
 TST-CT-0085;REQ-API-0175;sem_destroy;UNIT;API_CONTRACT_SYNC;Domain contract scaffold for sem_destroy (User Manual-defined semantics).;PLANNED;AI-TestAgent
 TST-CT-0086;REQ-API-0176;sem_init;UNIT;API_CONTRACT_SYNC;Domain contract scaffold for sem_init (User Manual-defined semantics).;PLANNED;AI-TestAgent
 TST-CT-0087;REQ-API-0177;sem_post;UNIT;API_CONTRACT_SYNC;Domain contract scaffold for sem_post (User Manual-defined semantics).;PLANNED;AI-TestAgent

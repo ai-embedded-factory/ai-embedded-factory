@@ -25,10 +25,14 @@ static int st_state_errors(void) {
 }
 
 static int st_success_path(void) {
-  (void)0;
-  /* Success path requires valid object setup; keep non-blocking during scaffolding. */
-  (void)pthread_self();
-  return mpx_tbd("success path requires valid object setup");
+  errno = 0;
+  __typeof__(pthread_self()) t1 = pthread_self();
+  __typeof__(pthread_self()) t2 = pthread_self();
+  /* When implemented, pthread_self should be stable within the same thread context. */
+  if (errno != 0) return 1;
+  /* Compare raw representation if possible via memcmp */
+  if (memcmp(&t1, &t2, sizeof(t1)) != 0) return 1;
+  return 0;
 }
 
 int main(void) {
