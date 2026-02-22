@@ -14,3 +14,10 @@ This repository contains an **English** per-API SRS baseline for a **1:1 behavio
 ## Verification
 - `verification/TEST_PLAN.md`
 - `verification/TEST_SPEC.csv` (delimiter: ';')
+
+## Build & Test (Skeleton)
+```bash
+cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Debug
+cmake --build build
+ctest --test-dir build --output-on-failure
+```

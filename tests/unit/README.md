@@ -1,7 +1,7 @@
 # Unit Tests
 
-Unit tests will be generated/implemented per `verification/TEST_SPEC.csv`.
+Auto-generated smoke tests are located in `tests/unit/generated/`.
 
-Conventions:
-- One test file per API family (preferred), or per API where required.
-- Test naming: `test_<api_or_family>_<behavior>.c`
+Next step:
+- Replace ENOSYS stubs with real implementation.
+- Update tests from smoke to contract-level assertions (return codes, errno, state transitions).
