@@ -9,7 +9,12 @@
  */
 
 static int st_param_validation(void) {
-  return mpx_tbd("parameter validation (invalid args -> expected return/errno)");
+  errno = 0;
+  int rc = (int)mpx_pthread_memory_manager_enable();
+  if (rc != -1) return 1;
+  if (errno == 0) return 1;
+  if ((errno != EINVAL) && (errno != ENOME)) return 1;
+  return 0;
 }
 
 static int st_state_errors(void) {
@@ -34,8 +39,9 @@ int main(void) {
    * NO PREEMPTION. This service does not result in preemption.
    */
 
-  /* Phase 0: SKIP if stubbed */
-  errno = ENOSYS;
+  /* Phase 0: call API once and SKIP if stubbed */
+  errno = 0;
+  (void)mpx_pthread_memory_manager_enable();
   if (mpx_skip_if_stubbed("mpx_pthread_memory_manager_enable")) return 0;
 
   int failures = 0;

@@ -9,7 +9,12 @@
  */
 
 static int st_param_validation(void) {
-  return mpx_tbd("parameter validation (invalid args -> expected return/errno)");
+  errno = 0;
+  int rc = (int)mpx_pthread_ticktimer_start(0);
+  if (rc != -1) return 1;
+  if (errno == 0) return 1;
+  if ((errno != EBUSY) && (errno != EINVAL)) return 1;
+  return 0;
 }
 
 static int st_state_errors(void) {
@@ -34,8 +39,9 @@ int main(void) {
    * From the location where this API is called, at least (48 + MPX_BINDING_STACK_FRAME_SIZE) bytes of stack should be available. This estimate is based on a typical 32-bit architecture. Stack usage should be verified in the application context.
    */
 
-  /* Phase 0: SKIP if stubbed */
-  errno = ENOSYS;
+  /* Phase 0: call API once and SKIP if stubbed */
+  errno = 0;
+  (void)mpx_pthread_ticktimer_start(0);
   if (mpx_skip_if_stubbed("mpx_pthread_ticktimer_start")) return 0;
 
   int failures = 0;

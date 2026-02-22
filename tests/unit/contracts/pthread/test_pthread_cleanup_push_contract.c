@@ -9,7 +9,7 @@
  */
 
 static int st_param_validation(void) {
-  return mpx_tbd("parameter validation (invalid args -> expected return/errno)");
+  return mpx_tbd("parameter validation (void-return API)");
 }
 
 static int st_state_errors(void) {
@@ -33,8 +33,9 @@ int main(void) {
    * This service is callable only from the thread context, i.e., it may not be called from an interrupt handler.
    */
 
-  /* Phase 0: SKIP if stubbed */
-  errno = ENOSYS;
+  /* Phase 0: call API once and SKIP if stubbed */
+  errno = 0;
+  (void)pthread_cleanup_push(0, 0);
   if (mpx_skip_if_stubbed("pthread_cleanup_push")) return 0;
 
   int failures = 0;

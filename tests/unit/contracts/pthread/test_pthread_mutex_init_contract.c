@@ -9,7 +9,12 @@
  */
 
 static int st_param_validation(void) {
-  return mpx_tbd("parameter validation (invalid args -> expected return/errno)");
+  errno = 0;
+  int rc = (int)pthread_mutex_init(0, 0);
+  if (rc != -1) return 1;
+  if (errno == 0) return 1;
+  if ((errno != EBUSY) && (errno != EINVAL) && (errno != ENOMEM)) return 1;
+  return 0;
 }
 
 static int st_state_errors(void) {
@@ -34,8 +39,9 @@ int main(void) {
    * Stack Usage Estimate:
    */
 
-  /* Phase 0: SKIP if stubbed */
-  errno = ENOSYS;
+  /* Phase 0: call API once and SKIP if stubbed */
+  errno = 0;
+  (void)pthread_mutex_init(0, 0);
   if (mpx_skip_if_stubbed("pthread_mutex_init")) return 0;
 
   int failures = 0;
