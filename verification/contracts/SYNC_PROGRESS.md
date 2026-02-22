@@ -1,14 +1,18 @@
-# Sync Domain Hardening — Step 1
+# Sync Domain Hardening — Step 2 (Parameter Validation)
 
-## Deliverables
-- `CONTRACTS_SYNC.csv` created (delimiter ';') with extracted errno/return-code notes where available.
-- Contract tests under `tests/unit/contracts/sync/` normalized into subtests:
-  - param_validation
-  - state_errors
-  - success_path
-- Tests remain CI-safe while stubs are present (skip on ENOSYS).
+## What changed
+- Implemented `st_param_validation()` for sync-domain contract tests using invalid pointer/object patterns.
+- Enriched `CONTRACTS_SYNC.csv` with baseline expectations for:
+  - parameter validation
+  - state errors
+  - success path
 
-## Next
-- Step 2: implement param_validation negative-path checks using generic invalid calls.
-- Step 3: implement state_errors patterns (invalid object state).
-- Step 4: success-path hardening for low-setup APIs (init/destroy patterns).
+## Test behavior while stubbed
+- Phase 0 performs a call and **SKIPs** if `errno == ENOSYS`.
+- Contract subtests run only when real implementation is linked.
+
+## Next (Step 3)
+- Implement `st_state_errors()`:
+  - destroyed/uninitialized objects
+  - busy objects (e.g., sem_destroy with waiting threads)
+- Start low-setup success paths where feasible (init/destroy, trylock).
