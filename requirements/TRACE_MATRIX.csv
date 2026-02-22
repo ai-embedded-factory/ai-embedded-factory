@@ -1,2 +1,7 @@
-req_id;title;arch_id;design_id;code_ref;test_id;verify_status;notes
-REQ-0001;Preemptive scheduler;ARCH-0001;DES-0001;src/kernel/sched.c;TST-0001;PLANNED;
+req_id;title;source;arch_id;design_id;code_ref;test_id;verify_status;notes
+REQ-SYS-0001;System start via mpx_pthread_start;User Manual;ARCH-0001;DES-0001;;;PLANNED;Start flow per User Manual
+REQ-SYS-0002;Full API surface per updated Reference Card;Reference Card;ARCH-0002;DES-0002;;;PLANNED;See API_CATALOG.md (updated)
+REQ-SYS-0003;Callable context constraints per API;User Manual;ARCH-0003;DES-0003;;;PLANNED;Enforce 'Callable From' rules
+REQ-SYS-0004;Real-time scenario semantics per API;User Manual;ARCH-0003;DES-0003;;;PLANNED;Match preemption statements
+REQ-SYS-0005;Return codes and errno model per API;User Manual;ARCH-0004;DES-0004;;;PLANNED;Return codes + errno
+REQ-SYS-0006;Traceability enforced via semicolon CSV gate;Both;ARCH-0005;DES-0005;;;PLANNED;tools/trace/trace_check.py

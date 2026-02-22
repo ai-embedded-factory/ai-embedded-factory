@@ -1,16 +1,16 @@
-# Engineering Policy
+# Engineering Policy (Baseline)
 
-## Definition of Ready (DoR)
-- Exigence REQ-xxxx rédigée, non ambiguë, testable, AC présents
-- Méthode de vérification définie
+## Language
+All documents and artifacts are in **English**.
 
-## Definition of Done (DoD)
-- Trace mise à jour (REQ->TST->Code)
-- Tests ajoutés et passants
-- Static analysis OK
-- Coverage conforme
-- Doc mise à jour (SRS/ARCH/DESIGN si impact)
+## CSV Format
+All CSV files MUST use semicolon (`;`) as delimiter.
 
-## PR Rules
-- PR title: "[REQ-xxxx] <résumé>"
-- Body: Impact, risques, tests, liens trace
+## Traceability Gate
+- If a row in `TRACE_MATRIX.csv` is marked `APPROVED`, it MUST include:
+  - `code_ref`
+  - `test_id`
+- Otherwise CI fails.
+
+## Conformance Target
+1:1 behavior clone of MPX RTOS v1.0.0 (per provided documents).
