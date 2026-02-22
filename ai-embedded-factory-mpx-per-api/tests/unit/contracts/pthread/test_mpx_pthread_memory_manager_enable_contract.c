@@ -1,0 +1,63 @@
+#include <errno.h>
+#include <stdio.h>
+#include <string.h>
+#include "../../../src/stub/mpx_stub.h"
+#include "../contract_common.h"
+
+/* Domain contract scaffold (pthread).
+ * API: mpx_pthread_memory_manager_enable
+ */
+
+static int st_param_validation(void) {
+  errno = 0;
+  int rc = (int)mpx_pthread_memory_manager_enable();
+  if (rc != -1) return 1;
+  if (errno == 0) return 1;
+  if ((errno != EINVAL) && (errno != ENOME)) return 1;
+  return 0;
+}
+
+static int st_state_errors(void) {
+  errno = 0;
+  int rc = (int)mpx_pthread_memory_manager_enable();
+  if (rc != -1) return 1;
+  if (errno == 0) return 1;
+  if ((errno != EINVAL) && (errno != ENOME)) return 1;
+  return 0;
+}
+
+static int st_success_path(void) {
+  (void)0;
+  /* Success path requires valid object setup; keep non-blocking during scaffolding. */
+  (void)mpx_pthread_memory_manager_enable();
+  return mpx_tbd("success path requires valid object setup");
+}
+
+int main(void) {
+  /* Description (extract): This pthreadsmore service enables full management of the remaining memory supplied by the application when the MPX RTOS is started via mpx_pthread_start. The memory allocated with all subsequent system object creation and destruction will be fully managed. */
+  /* Errno symbols observed in manual extract: EINVAL, ENOME */
+  /* Return codes / errno notes (extract, first lines):
+   * MPX_SUCCESS (0)	Successful enablement of internal MPX RTOS
+   * memory management.
+   * EINVAL	Invalid (NULL) pointer supplied to the
+   * mpx_pthread_start API.
+   * ENOME	Not enough memory remaining.
+   * Real-time Scenarios:
+   * Upon the successful execution of this service, the following real-time scenarios are possible:
+   * NO PREEMPTION. This service does not result in preemption.
+   */
+
+  /* Phase 0: call API once and SKIP if stubbed */
+  errno = 0;
+  (void)mpx_pthread_memory_manager_enable();
+  if (mpx_skip_if_stubbed("mpx_pthread_memory_manager_enable")) return 0;
+
+  int failures = 0;
+  failures += mpx_run_subtest("param_validation", st_param_validation);
+  failures += mpx_run_subtest("state_errors", st_state_errors);
+  failures += mpx_run_subtest("success_path", st_success_path);
+
+  if (failures != 0) return 1;
+  printf("PASS (scaffold): mpx_pthread_memory_manager_enable\n");
+  return 0;
+}
