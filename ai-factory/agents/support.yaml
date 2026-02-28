@@ -2,7 +2,7 @@ name: support
 purpose: Triage issues, reproduce, produce minimal repro and patch suggestions.
 inputs:
 - repo_state
-- issue_report
+- task_spec
 - constraints
 outputs:
 - diff

@@ -1,17 +1,17 @@
 name: orchestrator
-purpose: Plan and coordinate work across agents; produce a task plan and decision
-  packets.
+purpose: Plan and coordinate work across agents; produce a JSON plan for pipeline
+  execution.
 inputs:
 - repo_state
 - objective
 - constraints
 outputs:
-- plan.json
-- agent_output.json
+- agent_output.json (includes plan)
 rules:
 - All artifacts in English
 - All CSV use ';' delimiter
-- Must decompose into atomic tasks with clear acceptance criteria
+- Must produce a plan with ordered steps and acceptance criteria
+- Prefer a single PR per objective unless explicitly requested otherwise
 - Block if policy/trace gates would fail
 do_not:
 - Do not modify code directly

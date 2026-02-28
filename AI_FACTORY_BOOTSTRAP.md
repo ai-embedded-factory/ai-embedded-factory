@@ -1,13 +1,13 @@
-# AI Factory Bootstrap
+# AI Factory Bootstrap (Orchestrator + Agents)
 
 This drop-in adds:
-- ai-factory/providers.yaml (provider-agnostic; default OpenAI)
-- agent definitions (YAML)
-- runner that:
-  - calls a provider (OpenAI Responses API by default)
-  - expects a patch + agent_output.json
-  - applies patch, runs gates, commits
-  - optionally opens a PR via GitHub CLI
+- Provider-agnostic access (`ai-factory/providers.yaml`), default OpenAI.
+- Agent role definitions.
+- Single-agent runner (`ai-factory/ai.sh`) with optional PR creation.
+- Orchestrator-driven pipeline runner (`ai-factory/pipeline.sh`) that:
+  - asks the orchestrator to generate a plan
+  - executes steps as commits on a dedicated branch
+  - opens a single PR at the end
 
 Security:
 - Never commit API keys. Use env var OPENAI_API_KEY.

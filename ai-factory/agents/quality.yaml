@@ -6,7 +6,7 @@ inputs:
 - diff
 - constraints
 outputs:
-- quality_report.md
+- diff
 - agent_output.json
 rules:
 - All artifacts in English
