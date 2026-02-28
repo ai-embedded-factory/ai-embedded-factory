@@ -55,7 +55,27 @@ def openai_responses_http(provider, instructions, user_input):
     if r.status_code >= 400:
         raise RuntimeError(f"OpenAI API error {r.status_code}: {r.text[:1000]}")
     data = r.json()
-    return (data.get("output_text") or ""), data
+    # 'output_text' may be absent in raw HTTP responses; aggregate from output[].
+    text = data.get("output_text")
+    if isinstance(text, str) and text.strip():
+        return text, data
+
+    parts = []
+    for item in (data.get("output") or []):
+        if not isinstance(item, dict):
+            continue
+        if item.get("type") == "message":
+            for c in (item.get("content") or []):
+                if isinstance(c, dict) and c.get("type") in ("output_text", "text") and isinstance(c.get("text"), str):
+                    parts.append(c["text"])
+        elif item.get("type") in ("output_text", "text") and isinstance(item.get("text"), str):
+            parts.append(item["text"])
+        else:
+            for c in (item.get("content") or []):
+                if isinstance(c, dict) and isinstance(c.get("text"), str):
+                    parts.append(c["text"])
+
+    return "\n".join([p for p in parts if p.strip()]), data
 
 def dummy_echo(provider, instructions, user_input):
     return f"[DUMMY]\nINSTRUCTIONS:\n{instructions}\nINPUT:\n{user_input}\n", {"dummy": True}

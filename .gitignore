@@ -11,3 +11,11 @@ __pycache__/
 *.pyo
 *.pyd
 .pytest_cache/
+
+# Python virtualenv / bytecode
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
