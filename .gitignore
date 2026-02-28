@@ -19,3 +19,11 @@ __pycache__/
 *.pyo
 *.pyd
 .pytest_cache/
+
+# AI factory runtime
+ai-factory/logs/
+ai-factory/work/
+
+# Python bytecode
+__pycache__/
+*.pyc
