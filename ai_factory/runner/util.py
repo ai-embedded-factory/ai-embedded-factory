@@ -98,6 +98,16 @@ def parse_agent_response(text: str):
     if not js:
         raise RuntimeError("Agent response missing ```json``` block.")
     agent_output = json.loads(js)
+
+    # Compatibility shim: orchestrator may emit 'agent_name' and omit required fields.
+    if "agent" not in agent_output and "agent_name" in agent_output:
+        agent_output["agent"] = agent_output["agent_name"]
+    if "scope" not in agent_output:
+        agent_output["scope"] = agent_output.get("objective") or agent_output.get("branch") or "unspecified"
+    if "artifacts" not in agent_output:
+        agent_output["artifacts"] = []
+    if "verification" not in agent_output:
+        agent_output["verification"] = []
     schema_path = af_root() / "schemas" / "agent_output.schema.json"
     schema = json.loads(schema_path.read_text(encoding="utf-8"))
     validate(instance=agent_output, schema=schema)
