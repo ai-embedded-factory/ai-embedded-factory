@@ -181,9 +181,9 @@ TST-API-0179;REQ-API-0179;sem_wait;UNIT;API_CONTRACT;Contract verification for s
 TST-API-0180;REQ-API-0180;sleep;UNIT;API_CONTRACT;Contract verification for sleep (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
 TST-API-0181;REQ-API-0181;time;UNIT;API_CONTRACT;Contract verification for time (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
 TST-API-0182;REQ-API-0182;usleep;UNIT;API_CONTRACT;Contract verification for usleep (return codes, errno, callable context where applicable).;PLANNED;AI-TestAgent
-TST-CT-0001;REQ-API-0085;clock_getres;UNIT;API_CONTRACT_TIME;Domain contract scaffold for clock_getres (User Manual-defined semantics).;READY_FOR_IMPL;AI-TestAgent
-TST-CT-0002;REQ-API-0086;clock_gettime;UNIT;API_CONTRACT_TIME;Domain contract scaffold for clock_gettime (User Manual-defined semantics).;READY_FOR_IMPL;AI-TestAgent
-TST-CT-0003;REQ-API-0087;clock_settime;UNIT;API_CONTRACT_TIME;Domain contract scaffold for clock_settime (User Manual-defined semantics).;READY_FOR_IMPL;AI-TestAgent
+TST-CT-0001;REQ-API-0085;clock_getres;UNIT;API_CONTRACT_TIME;Domain contract scaffold for clock_getres (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0002;REQ-API-0086;clock_gettime;UNIT;API_CONTRACT_TIME;Domain contract scaffold for clock_gettime (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
+TST-CT-0003;REQ-API-0087;clock_settime;UNIT;API_CONTRACT_TIME;Domain contract scaffold for clock_settime (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
 TST-CT-0004;REQ-API-0092;mpx_mq_extendattr_destroy;UNIT;API_CONTRACT_MQ;Domain contract scaffold for mpx_mq_extendattr_destroy (User Manual-defined semantics).;PLANNED;AI-TestAgent
 TST-CT-0005;REQ-API-0093;mpx_mq_extendattr_getcontroladdr;UNIT;API_CONTRACT_MQ;Domain contract scaffold for mpx_mq_extendattr_getcontroladdr (User Manual-defined semantics).;PLANNED;AI-TestAgent
 TST-CT-0006;REQ-API-0094;mpx_mq_extendattr_getcontrolsize;UNIT;API_CONTRACT_MQ;Domain contract scaffold for mpx_mq_extendattr_getcontrolsize (User Manual-defined semantics).;PLANNED;AI-TestAgent
@@ -221,7 +221,7 @@ TST-CT-0037;REQ-API-0126;mq_send;UNIT;API_CONTRACT_MQ;Domain contract scaffold f
 TST-CT-0038;REQ-API-0127;mq_setattr;UNIT;API_CONTRACT_MQ;Domain contract scaffold for mq_setattr (User Manual-defined semantics).;PLANNED;AI-TestAgent
 TST-CT-0039;REQ-API-0128;mq_timedreceive;UNIT;API_CONTRACT_MQ;Domain contract scaffold for mq_timedreceive (User Manual-defined semantics).;PLANNED;AI-TestAgent
 TST-CT-0040;REQ-API-0129;mq_timedsend;UNIT;API_CONTRACT_MQ;Domain contract scaffold for mq_timedsend (User Manual-defined semantics).;PLANNED;AI-TestAgent
-TST-CT-0041;REQ-API-0130;nanosleep;UNIT;API_CONTRACT_TIME;Domain contract scaffold for nanosleep (User Manual-defined semantics).;READY_FOR_IMPL;AI-TestAgent
+TST-CT-0041;REQ-API-0130;nanosleep;UNIT;API_CONTRACT_TIME;Domain contract scaffold for nanosleep (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
 TST-CT-0042;REQ-API-0132;pthread_attr_getdetachstate;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_attr_getdetachstate (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
 TST-CT-0043;REQ-API-0133;pthread_attr_getstackaddr;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_attr_getstackaddr (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
 TST-CT-0044;REQ-API-0134;pthread_attr_getstacksize;UNIT;API_CONTRACT_PTHREAD;Domain contract scaffold for pthread_attr_getstacksize (User Manual-defined semantics).;IN_PROGRESS;AI-TestAgent
