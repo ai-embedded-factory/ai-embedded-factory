@@ -3,3 +3,11 @@ build/
 *.a
 *.so
 *.exe
+
+# Python virtualenv / bytecode
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
