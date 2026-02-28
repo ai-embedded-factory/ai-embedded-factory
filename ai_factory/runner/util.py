@@ -99,9 +99,21 @@ def parse_agent_response(text: str):
         raise RuntimeError("Agent response missing ```json``` block.")
     agent_output = json.loads(js)
 
+    # Envelope shim: some providers/agents return {"json":"<payload>"}.
+    # Unwrap if present.
+    if isinstance(agent_output, dict) and isinstance(agent_output.get("json"), str):
+        try:
+            unwrapped = json.loads(agent_output["json"])
+            if isinstance(unwrapped, dict):
+                agent_output = unwrapped
+        except Exception:
+            pass
+
     # Compatibility shim: orchestrator may emit 'agent_name' and omit required fields.
     if "agent" not in agent_output and "agent_name" in agent_output:
         agent_output["agent"] = agent_output["agent_name"]
+    if "agent" not in agent_output:
+        agent_output["agent"] = "orchestrator" if "plan" in agent_output else "unknown"
     if "scope" not in agent_output:
         agent_output["scope"] = agent_output.get("objective") or agent_output.get("branch") or "unspecified"
     if "artifacts" not in agent_output:
