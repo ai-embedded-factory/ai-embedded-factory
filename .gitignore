@@ -27,3 +27,31 @@ ai-factory/work/
 # Python bytecode
 __pycache__/
 *.pyc
+
+# IAR EWARM / IAR Embedded Workbench — build artifacts
+**/Debug/
+**/Release/
+**/Exe/
+**/Obj/
+**/Listings/
+**/Settings/            # optionnel: parfois "user-specific" (à garder si tu l’utilises pour des configs partagées)
+
+# Outputs / intermediate
+**/*.o
+**/*.obj
+**/*.d
+**/*.dep
+**/*.map
+**/*.out
+**/*.elf
+**/*.hex
+**/*.bin
+**/*.a
+**/*.lib
+**/*.tmp
+**/*.log
+
+# Backups / autosave
+**/*.ewp.bak
+**/*.eww.bak
+**/*~
