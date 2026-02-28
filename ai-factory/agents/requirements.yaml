@@ -1,0 +1,16 @@
+name: requirements
+purpose: Author or modify SRS, traceability requirements, acceptance criteria and
+  verification methods.
+inputs:
+- repo_state
+- task_spec
+- constraints
+outputs:
+- diff
+- agent_output.json
+rules:
+- All artifacts in English
+- All CSV use ';' delimiter
+- No APPROVED trace row without code_ref + test_id
+do_not:
+- Do not change implementation code outside docs/requirements

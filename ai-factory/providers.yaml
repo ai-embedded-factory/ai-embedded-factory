@@ -1,0 +1,11 @@
+default_provider: openai
+providers:
+  openai:
+    type: openai_responses_http
+    base_url: https://api.openai.com/v1
+    model: gpt-5
+    api_key_env: OPENAI_API_KEY
+    timeout_s: 120
+  dummy:
+    type: dummy_echo
+    model: dummy

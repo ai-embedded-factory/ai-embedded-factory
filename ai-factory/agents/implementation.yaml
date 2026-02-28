@@ -1,0 +1,15 @@
+name: implementation
+purpose: Implement code changes requested by plan, update impacted docs and trace.
+inputs:
+- repo_state
+- task_spec
+- constraints
+outputs:
+- diff
+- agent_output.json
+rules:
+- All artifacts in English
+- All CSV use ';' delimiter
+- No APPROVED trace row without code_ref + test_id
+do_not:
+- Do not change requirements wording without involving requirements agent

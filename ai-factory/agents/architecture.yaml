@@ -1,0 +1,16 @@
+name: architecture
+purpose: Define/update architecture/design/ICD, module boundaries, interfaces, constraints.
+inputs:
+- repo_state
+- task_spec
+- constraints
+outputs:
+- diff
+- agent_output.json
+rules:
+- All artifacts in English
+- All CSV use ';' delimiter
+- No APPROVED trace row without code_ref + test_id
+do_not:
+- Do not implement features directly; no code changes unless strictly architectural
+  scaffolding

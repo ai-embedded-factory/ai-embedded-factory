@@ -1,0 +1,15 @@
+name: support
+purpose: Triage issues, reproduce, produce minimal repro and patch suggestions.
+inputs:
+- repo_state
+- issue_report
+- constraints
+outputs:
+- diff
+- agent_output.json
+rules:
+- All artifacts in English
+- All CSV use ';' delimiter
+- No APPROVED trace row without code_ref + test_id
+do_not:
+- Do not merge directly; always via PR workflow
