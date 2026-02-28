@@ -1,18 +1,17 @@
-# Time Domain Hardening — Step 2 (Parameter Validation)
+# Time Domain Hardening — Step 3 (State Errors)
 
 ## What changed
-- Implemented `st_param_validation()` for time-domain contract tests using invalid parameter patterns:
-  - NULL pointers for output structures
-  - invalid clock IDs / timer IDs where applicable
-  - invalid scalar values (best-effort)
+Implemented `st_state_errors()` for time-domain contract tests using realistic invalid-state patterns:
 
-- Enriched `CONTRACTS_TIME.csv` with baseline expectations for parameter validation, state errors, and success path.
+- `clock_*`: invalid `clockid_t` (e.g., -1) with valid output storage
+- `timer_*`: invalid `timer_t` handles and invalid `clockid_t` where applicable
+- `nanosleep`: invalid `timespec` (tv_nsec = 1_000_000_000)
 
 ## Behavior while stubbed
-- Phase 0 calls the API and **SKIPs** when `errno == ENOSYS`.
+- Each test still SKIPs when `errno == ENOSYS`.
 
-## Next (Step 3)
-- Implement `st_state_errors()`:
-  - invalid timer handles, disarmed timers
-  - invalid clock IDs beyond parameter validation
-- Start Step 4 success paths (clock_gettime, clock_getres, nanosleep 0).
+## Next (Step 4)
+- Low-setup success paths:
+  - `clock_gettime`, `clock_getres` with valid pointers
+  - `nanosleep` with zero duration
+  - `time()` basic call

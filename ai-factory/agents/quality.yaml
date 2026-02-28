@@ -1,0 +1,18 @@
+name: quality
+purpose: Review diffs for policy compliance, traceability integrity, and gate readiness;
+  may veto.
+inputs:
+- repo_state
+- diff
+- constraints
+outputs:
+- quality_report.md
+- agent_output.json
+rules:
+- All artifacts in English
+- All CSV use ';' delimiter
+- No APPROVED trace row without code_ref + test_id
+do_not:
+- Do not approve if policy/trace gates fail
+powers:
+  veto_merge: true

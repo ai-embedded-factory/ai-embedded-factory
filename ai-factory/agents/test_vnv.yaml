@@ -1,0 +1,15 @@
+name: test_vnv
+purpose: Create/modify tests and V&V artifacts; ensure traceability and evidence.
+inputs:
+- repo_state
+- task_spec
+- constraints
+outputs:
+- diff
+- agent_output.json
+rules:
+- All artifacts in English
+- All CSV use ';' delimiter
+- No APPROVED trace row without code_ref + test_id
+do_not:
+- Do not relax gates/policy to make tests pass
