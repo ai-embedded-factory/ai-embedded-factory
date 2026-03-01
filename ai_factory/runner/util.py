@@ -90,17 +90,31 @@ def provider_call(provider_cfg, instructions, user_input):
 
 def parse_agent_response(text: str):
     import re
-    def extract(lang):
+    # Expect optional diff in ```diff ...```.
+    def extract(lang: str):
         m = re.search(r"```" + re.escape(lang) + r"\s+([\s\S]*?)```", text)
         return m.group(1).strip() if m else None
+
     diff = extract("diff")  # optional
-    js = extract("json")
+    js = extract("json")    # preferred
+
+    raw = (text or "").strip()
+
+    # Fallback: accept raw JSON or embedded JSON object when ```json``` is missing.
     if not js:
-        raise RuntimeError("Agent response missing ```json``` block.")
+        candidate = raw
+        if not (candidate.startswith("{") and candidate.endswith("}")):
+            start_i = candidate.find("{")
+            end_i = candidate.rfind("}")
+            if start_i != -1 and end_i != -1 and end_i > start_i:
+                candidate = candidate[start_i:end_i+1]
+            else:
+                raise RuntimeError("Agent response missing JSON payload (no ```json``` block and no JSON object found).")
+        js = candidate
+
     agent_output = json.loads(js)
 
-    # Envelope shim: some providers/agents return {"json":"<payload>"}.
-    # Unwrap if present.
+    # Envelope shim: sometimes the response is {"json":"<payload>"} where payload is a JSON string.
     if isinstance(agent_output, dict) and isinstance(agent_output.get("json"), str):
         try:
             unwrapped = json.loads(agent_output["json"])
@@ -109,7 +123,7 @@ def parse_agent_response(text: str):
         except Exception:
             pass
 
-    # Compatibility shim: orchestrator may emit 'agent_name' and omit required fields.
+    # Compatibility shim: orchestrator may emit agent_name/branch/plan but omit required schema fields.
     if "agent" not in agent_output and "agent_name" in agent_output:
         agent_output["agent"] = agent_output["agent_name"]
     if "agent" not in agent_output:
@@ -120,10 +134,13 @@ def parse_agent_response(text: str):
         agent_output["artifacts"] = []
     if "verification" not in agent_output:
         agent_output["verification"] = []
+
     schema_path = af_root() / "schemas" / "agent_output.schema.json"
     schema = json.loads(schema_path.read_text(encoding="utf-8"))
     validate(instance=agent_output, schema=schema)
+
     return diff, agent_output
+
 
 def apply_diff(diff_text: str):
     if not diff_text:
