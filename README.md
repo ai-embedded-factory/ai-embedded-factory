@@ -28,3 +28,12 @@ ctest --test-dir build --output-on-failure
 
 ## Contract Matrices
 - `verification/contracts/` (CSV delimiter: `;`).
+
+<!-- MPX_PORTS_INDEX_START -->
+## Ports & toolchains
+
+- Ports index: [`docs/ports/README.md`](docs/ports/README.md)
+- IAR artifacts (docs + alignment reports): [`docs/ports/iar/`](docs/ports/iar/)
+- Port sources (arch/board): [`ports/`](ports/)
+<!-- MPX_PORTS_INDEX_END -->
+
