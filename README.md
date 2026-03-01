@@ -1,6 +1,6 @@
-# MPX RTOS Clone — Per-API SRS & Trace Baseline
+# MPX RTOS — Per-API SRS & Trace Baseline
 
-This repository contains an **English** per-API SRS baseline for a **1:1 behavioral clone** of MPX RTOS v1.0.0.
+This repository contains an **English** per-API SRS baseline for MPX RTOS v1.0.0.
 
 ## Artifacts
 - `requirements/SRS.md` — per-API requirements (REQ-API-xxxx)
